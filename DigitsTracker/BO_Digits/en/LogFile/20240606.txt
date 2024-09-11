@@ -1,0 +1,22 @@
+06-06-2024 15:33:05: session  :- Error :  ------------------------- Starts pageload------------
+06-06-2024 15:33:05: session  :- Error :  1 
+06-06-2024 15:33:05: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 15:33:05: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 15:33:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:33:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:33:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:35:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:35:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:36:04: session  :- Error :  ------------------------- Starts pageload------------
+06-06-2024 15:36:04: session  :- Error :  1 
+06-06-2024 15:36:06: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 15:36:06: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 15:36:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:36:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:36:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 15:36:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-06-2024 17:24:29: session  :- Error :  ------------------------- Starts pageload------------
+06-06-2024 17:24:29: session  :- Error :  1 
+06-06-2024 17:24:29: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 17:24:30: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-06-2024 17:24:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

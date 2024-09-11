@@ -1,0 +1,10 @@
+23-04-2024 22:11:00: session  :- Error :  ------------------------- Starts pageload------------
+23-04-2024 22:11:00: session  :- Error :  1 
+23-04-2024 22:11:01: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+23-04-2024 22:11:01: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+23-04-2024 22:11:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+23-04-2024 22:11:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+23-04-2024 22:12:23: TimeSheetRequest.aspx :- Error : Input string was not in a correct format. - 
+23-04-2024 22:15:45: TimeSheetRequest.aspx :- Error : Input string was not in a correct format. - 
+23-04-2024 22:37:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

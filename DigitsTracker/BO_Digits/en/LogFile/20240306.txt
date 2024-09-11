@@ -1,0 +1,255 @@
+06-03-2024 08:38:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:38:18: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:38:18: session  :- Error :  1 
+06-03-2024 08:38:18: session  :- Error :  2 
+06-03-2024 08:38:25: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:38:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:38:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:38:55: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:38:55: session  :- Error :  1 
+06-03-2024 08:38:55: session  :- Error :  2 
+06-03-2024 08:38:57: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:38:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:39:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:40:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:40:11: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:40:11: session  :- Error :  1 
+06-03-2024 08:40:11: session  :- Error :  2 
+06-03-2024 08:40:13: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:40:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:40:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:41:12: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:41:12: session  :- Error :  1 
+06-03-2024 08:41:12: session  :- Error :  2 
+06-03-2024 08:41:13: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:41:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:41:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:42:10: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:42:10: session  :- Error :  1 
+06-03-2024 08:42:10: session  :- Error :  2 
+06-03-2024 08:42:12: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:42:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:42:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:42:32: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:42:32: session  :- Error :  1 
+06-03-2024 08:42:32: session  :- Error :  2 
+06-03-2024 08:42:34: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:42:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:42:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:43:05: AddEditTracker.aspx Status() :- Error : Selection out of range
+Parameter name: value - 
+06-03-2024 08:43:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:43:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:44:14: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:44:14: session  :- Error :  1 
+06-03-2024 08:44:14: session  :- Error :  2 
+06-03-2024 08:44:16: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:44:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:44:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 08:45:07: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 08:45:07: session  :- Error :  1 
+06-03-2024 08:45:07: session  :- Error :  2 
+06-03-2024 08:45:09: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 08:45:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:34:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:34:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:34:41: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:34:41: session  :- Error :  1 
+06-03-2024 10:34:41: session  :- Error :  2 
+06-03-2024 10:34:43: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:34:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:34:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:35:41: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:35:41: session  :- Error :  1 
+06-03-2024 10:35:41: session  :- Error :  2 
+06-03-2024 10:35:43: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:35:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:36:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:36:27: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:36:27: session  :- Error :  1 
+06-03-2024 10:36:27: session  :- Error :  2 
+06-03-2024 10:36:29: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:36:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:36:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:37:13: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:37:13: session  :- Error :  1 
+06-03-2024 10:37:13: session  :- Error :  2 
+06-03-2024 10:37:15: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:37:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:37:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:37:39: AddEditTracker.aspx Status() :- Error : Selection out of range
+Parameter name: value - 
+06-03-2024 10:37:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:38:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:38:05: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:38:05: session  :- Error :  1 
+06-03-2024 10:38:05: session  :- Error :  2 
+06-03-2024 10:38:07: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:38:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:53:03: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 10:53:03: session  :- Error :  1 
+06-03-2024 10:53:03: session  :- Error :  2 
+06-03-2024 10:53:06: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 10:53:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 10:53:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:04:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:06:19: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:06:19: session  :- Error :  1 
+06-03-2024 11:06:19: session  :- Error :  2 
+06-03-2024 11:06:23: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 11:06:24: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:06:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:06:48: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:06:48: session  :- Error :  1 
+06-03-2024 11:06:48: session  :- Error :  2 
+06-03-2024 11:06:51: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 11:06:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:07:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:08:57: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:08:57: session  :- Error :  1 
+06-03-2024 11:08:57: session  :- Error :  2 
+06-03-2024 11:09:00: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 11:09:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:10:06: session  :- Error :  3 
+06-03-2024 11:10:06: session  :- Error :  2 
+06-03-2024 11:10:07: session  :- Error :  4 
+06-03-2024 11:10:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:20:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:22:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:23:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:24:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:24:16: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:24:16: session  :- Error :  1 
+06-03-2024 11:24:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:24:21: session  :- Error :  3 
+06-03-2024 11:24:21: session  :- Error :  2 
+06-03-2024 11:24:22: session  :- Error :  4 
+06-03-2024 11:24:34: session  :- Error :  3 
+06-03-2024 11:24:34: session  :- Error :  2 
+06-03-2024 11:24:35: session  :- Error :  4 
+06-03-2024 11:28:05: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:28:05: session  :- Error :  1 
+06-03-2024 11:28:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:28:13: session  :- Error :  3 
+06-03-2024 11:28:13: session  :- Error :  2 
+06-03-2024 11:28:14: session  :- Error :  4 
+06-03-2024 11:28:20: session  :- Error :  3 
+06-03-2024 11:28:20: session  :- Error :  2 
+06-03-2024 11:28:21: session  :- Error :  4 
+06-03-2024 11:29:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:29:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:31:43: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:31:43: session  :- Error :  1 
+06-03-2024 11:31:43: session  :- Error :  2 
+06-03-2024 11:31:45: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 11:31:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:31:50: session  :- Error :  3 
+06-03-2024 11:31:50: session  :- Error :  2 
+06-03-2024 11:31:50: session  :- Error :  4 
+06-03-2024 11:31:55: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:32:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:32:12: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 11:32:12: session  :- Error :  1 
+06-03-2024 11:32:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:32:16: session  :- Error :  3 
+06-03-2024 11:32:16: session  :- Error :  2 
+06-03-2024 11:32:17: session  :- Error :  4 
+06-03-2024 11:32:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:32:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:35:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:42:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:42:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 11:43:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:00:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:00:43: General Functions  :- sp_TransactionsError : Incorrect syntax near 'trk_prt_ID'. - 
+06-03-2024 12:00:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:02:02: General Functions  :- sp_TransactionsError : Incorrect syntax near 'trk_prt_ID'. - 
+06-03-2024 12:02:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:02:09: General Functions  :- sp_TransactionsError : Incorrect syntax near 'trk_prt_ID'. - 
+06-03-2024 12:02:44: General Functions  :- sp_TransactionsError : Incorrect syntax near 'trk_prt_ID'. - 
+06-03-2024 12:02:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:03:06: General Functions  :- sp_TransactionsError : Incorrect syntax near 'trk_prt_ID'. - 
+06-03-2024 12:10:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:10:59: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 12:11:00: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:11:58: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 12:11:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:14:47: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 12:14:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:21:24: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 12:21:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:21:45: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:21:45: session  :- Error :  1 
+06-03-2024 12:21:45: session  :- Error :  2 
+06-03-2024 12:21:46: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-03-2024 12:21:47: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:21:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:31:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:31:14: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:31:14: session  :- Error :  1 
+06-03-2024 12:31:14: session  :- Error :  2 
+06-03-2024 12:31:15: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-03-2024 12:35:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:35:30: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:35:30: session  :- Error :  1 
+06-03-2024 12:35:30: session  :- Error :  2 
+06-03-2024 12:35:32: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:35:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:37:16: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:37:16: session  :- Error :  1 
+06-03-2024 12:37:16: session  :- Error :  2 
+06-03-2024 12:37:18: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:37:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:38:26: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:38:26: session  :- Error :  1 
+06-03-2024 12:38:26: session  :- Error :  2 
+06-03-2024 12:40:26: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:40:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:40:35: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:40:35: session  :- Error :  1 
+06-03-2024 12:40:35: session  :- Error :  2 
+06-03-2024 12:40:38: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:40:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 12:41:28: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 12:41:28: session  :- Error :  1 
+06-03-2024 12:41:28: session  :- Error :  2 
+06-03-2024 12:41:32: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 12:41:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:28:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:29:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:29:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:29:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:29:48: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 13:29:48: session  :- Error :  1 
+06-03-2024 13:29:48: session  :- Error :  2 
+06-03-2024 13:29:55: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 13:29:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:30:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:30:13: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 13:30:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:30:20: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 13:30:20: session  :- Error :  1 
+06-03-2024 13:30:21: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-03-2024 13:30:21: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:30:32: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 13:30:32: session  :- Error :  1 
+06-03-2024 13:30:32: session  :- Error :  2 
+06-03-2024 13:30:34: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 13:30:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:30:58: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 13:30:58: session  :- Error :  1 
+06-03-2024 13:30:58: session  :- Error :  2 
+06-03-2024 13:31:00: ListTracker.aspx ListData() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+06-03-2024 13:31:00: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:31:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:31:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:31:30: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 13:31:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:32:07: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+06-03-2024 13:32:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:32:10: session  :- Error :  ------------------------- Starts pageload------------
+06-03-2024 13:32:10: session  :- Error :  1 
+06-03-2024 13:32:10: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-03-2024 13:32:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+06-03-2024 13:32:15: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+06-03-2024 13:32:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

@@ -1,0 +1,1 @@
+29-01-2024 18:59:58: General Functions  :- sp_UserError : A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - The specified network name is no longer available.) - The specified network name is no longer available

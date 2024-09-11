@@ -1,0 +1,19 @@
+03-05-2024 09:49:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+03-05-2024 09:49:18: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+03-05-2024 09:49:19: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+03-05-2024 09:49:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+03-05-2024 09:53:58: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+03-05-2024 09:53:59: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+03-05-2024 09:54:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+03-05-2024 10:09:10: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+03-05-2024 10:09:10: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+03-05-2024 10:09:11: General Functions  :- sp_TransactionsError : Invalid column name 'trk_plf_ID'. - 
+03-05-2024 10:09:12: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+03-05-2024 10:12:58: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+03-05-2024 10:12:58: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+03-05-2024 10:12:59: General Functions  :- sp_TransactionsError : Invalid column name 'trk_plf_ID'. - 
+03-05-2024 10:13:00: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

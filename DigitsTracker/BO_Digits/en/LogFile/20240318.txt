@@ -1,0 +1,259 @@
+18-03-2024 09:04:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 09:09:02: General Functions  :- sp_TransactionsError : Incorrect syntax near 'ISNULL'. - 
+18-03-2024 09:09:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 09:09:03: General Functions  :- sp_TransactionsError : Incorrect syntax near 'ISNULL'. - 
+18-03-2024 09:09:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 09:10:29: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 09:11:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:05:37: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:07:52: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:07:59: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:08:11: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:14:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:14:41: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:15:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:18:22: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:18:37: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:19:33: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+18-03-2024 10:19:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:43:03: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:43:03: session  :- Error :  1 
+18-03-2024 10:43:03: session  :- Error :  2 
+18-03-2024 10:43:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:43:20: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:43:20: session  :- Error :  1 
+18-03-2024 10:43:20: session  :- Error :  2 
+18-03-2024 10:43:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:43:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:43:59: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:43:59: session  :- Error :  1 
+18-03-2024 10:43:59: session  :- Error :  2 
+18-03-2024 10:44:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:55:42: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:55:42: session  :- Error :  1 
+18-03-2024 10:55:42: session  :- Error :  2 
+18-03-2024 10:55:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:56:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:56:06: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:56:06: session  :- Error :  1 
+18-03-2024 10:56:06: session  :- Error :  2 
+18-03-2024 10:56:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 10:58:58: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 10:59:09: session  :- Error :  1 
+18-03-2024 10:59:10: session  :- Error :  2 
+18-03-2024 11:01:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:01:34: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:01:34: session  :- Error :  1 
+18-03-2024 11:01:34: session  :- Error :  2 
+18-03-2024 11:01:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:10:58: ActionQueue.aspx ListData() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:11:00: ActionQueue.aspx Status() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:11:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:11:14: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:11:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:11:25: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:11:25: session  :- Error :  1 
+18-03-2024 11:11:26: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:11:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:11:35: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:11:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:11:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:11:55: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:11:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:12:09: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:12:09: session  :- Error :  1 
+18-03-2024 11:12:09: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:12:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:12:12: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:12:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:12:31: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:12:31: session  :- Error :  1 
+18-03-2024 11:12:31: session  :- Error :  2 
+18-03-2024 11:12:33: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:12:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:13:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:13:09: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:13:09: session  :- Error :  1 
+18-03-2024 11:13:09: session  :- Error :  2 
+18-03-2024 11:13:10: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:13:12: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:15:24: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:15:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:15:44: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:15:44: session  :- Error :  1 
+18-03-2024 11:15:44: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:15:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:15:48: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:15:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:35: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:16:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:48: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:16:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:52: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:16:52: session  :- Error :  1 
+18-03-2024 11:16:53: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:16:53: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:16:57: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:16:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:06: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:17:06: session  :- Error :  1 
+18-03-2024 11:17:07: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:17:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:10: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:17:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:21: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:17:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:50: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:17:50: session  :- Error :  1 
+18-03-2024 11:17:51: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:17:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:17:56: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:17:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:18:15: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:18:15: session  :- Error :  1 
+18-03-2024 11:18:15: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:18:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:18:18: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 11:18:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:19:37: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:19:37: session  :- Error :  1 
+18-03-2024 11:19:37: session  :- Error :  2 
+18-03-2024 11:19:38: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:19:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:20:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:20:27: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:20:28: session  :- Error :  1 
+18-03-2024 11:20:29: session  :- Error :  2 
+18-03-2024 11:20:34: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:38:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:39:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:39:40: session  :- Error :  2 
+18-03-2024 11:39:41: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:39:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:40:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:40:13: session  :- Error :  2 
+18-03-2024 11:40:20: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:42:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:47:00: session  :- Error :  2 
+18-03-2024 11:47:01: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:47:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:47:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:47:34: session  :- Error :  2 
+18-03-2024 11:47:35: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:47:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:48:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:49:02: AddEditTracker.aspx :- Error : String was not recognized as a valid DateTime. - 
+18-03-2024 11:49:07: AddEditTracker.aspx :- Error : String was not recognized as a valid DateTime. - 
+18-03-2024 11:49:10: AddEditTracker.aspx :- Error : String was not recognized as a valid DateTime. - 
+18-03-2024 11:49:31: session  :- Error :  2 
+18-03-2024 11:49:32: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 11:49:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:50:03: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 11:50:03: session  :- Error :  1 
+18-03-2024 11:50:03: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 11:50:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:50:09: session  :- Error :  2 
+18-03-2024 11:50:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:57:01: session  :- Error :  2 
+18-03-2024 11:57:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:57:23: session  :- Error :  2 
+18-03-2024 11:57:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 11:58:56: session  :- Error :  2 
+18-03-2024 11:59:24: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:00:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:00:54: session  :- Error :  2 
+18-03-2024 12:00:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:05:04: session  :- Error :  ------------------------- Starts pageload------------
+18-03-2024 12:05:04: session  :- Error :  1 
+18-03-2024 12:05:04: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+18-03-2024 12:05:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:05:12: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+18-03-2024 12:05:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:05:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:05:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:05:44: session  :- Error :  2 
+18-03-2024 12:05:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:06:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:06:29: session  :- Error :  2 
+18-03-2024 12:06:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:06:39: session  :- Error :  2 
+18-03-2024 12:06:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:07:13: session  :- Error :  2 
+18-03-2024 12:07:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:17:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:17:48: session  :- Error :  2 
+18-03-2024 12:17:51: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:17:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:19:00: session  :- Error :  2 
+18-03-2024 12:19:02: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:19:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:20:20: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:20:30: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:20:32: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:20:50: session  :- Error :  2 
+18-03-2024 12:20:53: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:21:23: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:21:24: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:21:26: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:21:33: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+18-03-2024 12:21:54: session  :- Error :  2 
+18-03-2024 12:21:57: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:22:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:24:55: session  :- Error :  3 
+18-03-2024 12:24:55: session  :- Error :  2 
+18-03-2024 12:24:56: session  :- Error :  4 
+18-03-2024 12:26:45: session  :- Error :  2 
+18-03-2024 12:29:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:31:00: ActionQueue.aspx ListData() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:31:01: ActionQueue.aspx Status() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:31:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:31:16: session  :- Error :  2 
+18-03-2024 12:31:18: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:31:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:35:41: session  :- Error :  2 
+18-03-2024 12:35:43: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:36:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:37:01: session  :- Error :  2 
+18-03-2024 12:37:04: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:37:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:38:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:38:30: session  :- Error :  2 
+18-03-2024 12:38:32: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:38:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:40:49: session  :- Error :  2 
+18-03-2024 12:40:52: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:41:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:41:06: session  :- Error :  2 
+18-03-2024 12:41:08: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:41:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:46:09: session  :- Error :  2 
+18-03-2024 12:46:11: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:46:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:47:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:47:54: session  :- Error :  2 
+18-03-2024 12:47:56: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:48:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:49:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:49:13: session  :- Error :  2 
+18-03-2024 12:49:15: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:49:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:55:40: session  :- Error :  2 
+18-03-2024 12:56:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 12:56:35: session  :- Error :  2 
+18-03-2024 12:56:42: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 12:56:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 23:53:53: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 23:54:10: session  :- Error :  2 
+18-03-2024 23:54:14: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+18-03-2024 23:54:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 23:54:21: session  :- Error :  3 
+18-03-2024 23:54:21: session  :- Error :  2 
+18-03-2024 23:54:22: session  :- Error :  4 
+18-03-2024 23:58:33: session  :- Error :  2 
+18-03-2024 23:58:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+18-03-2024 23:58:38: session  :- Error :  3 
+18-03-2024 23:58:38: session  :- Error :  2 
+18-03-2024 23:58:38: session  :- Error :  4 

@@ -1,0 +1,134 @@
+09-05-2024 15:29:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:29:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:33:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:35:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:36:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:36:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:40:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:41:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:46:24: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:46:32: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_prt_ID'. - 
+09-05-2024 15:46:33: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 15:46:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:46:47: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:49:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:49:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:50:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:50:55: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:50:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:51:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:52:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:53:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:54:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:54:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:55:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:55:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:58:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:58:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 15:59:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:00:47: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:49:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:49:58: session  :- Error :  ------------------------- Starts pageload------------
+09-05-2024 16:49:58: session  :- Error :  1 
+09-05-2024 16:49:59: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-05-2024 16:49:59: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 16:50:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:50:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:50:17: session  :- Error :  ------------------------- Starts pageload------------
+09-05-2024 16:50:17: session  :- Error :  1 
+09-05-2024 16:50:18: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-05-2024 16:50:18: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 16:50:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:51:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:51:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 16:52:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:02:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:03:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:03:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:04:00: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:04:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:04:24: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:04:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:04:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:12:35: General Functions  :- sp_TransactionsError : Incorrect syntax near 'SUM'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+09-05-2024 17:12:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:12:36: General Functions  :- sp_TransactionsError : Incorrect syntax near 'SUM'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+09-05-2024 17:14:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:16:28: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:19:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:20:00: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-05-2024 17:20:01: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:20:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:20:28: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:20:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:28: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:21:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:23:47: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-05-2024 17:23:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:23:53: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:24:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:24:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:24:16: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-05-2024 17:24:17: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:25:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:25:44: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-05-2024 17:25:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:25:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:26:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:27:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:27:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:27:21: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:27:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:27:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:28:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:28:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:28:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:28:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:28:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:29:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:29:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:29:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:29:55: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:30:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:30:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:30:13: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-05-2024 17:30:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:33:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:33:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:39:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:45:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:46:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:46:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:47:30: session  :- Error :  ------------------------- Starts pageload------------
+09-05-2024 17:47:30: session  :- Error :  1 
+09-05-2024 17:47:31: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-05-2024 17:47:31: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 17:47:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:53:30: session  :- Error :  ------------------------- Starts pageload------------
+09-05-2024 17:53:30: session  :- Error :  1 
+09-05-2024 17:53:30: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-05-2024 17:53:31: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 17:53:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-05-2024 17:54:05: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_prt_ID'. - 
+09-05-2024 17:54:05: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-05-2024 17:54:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

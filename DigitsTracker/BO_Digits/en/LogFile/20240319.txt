@@ -1,0 +1,27 @@
+19-03-2024 00:01:06: session  :- Error :  2 
+19-03-2024 00:01:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 00:01:11: session  :- Error :  3 
+19-03-2024 00:01:11: session  :- Error :  2 
+19-03-2024 00:01:11: session  :- Error :  4 
+19-03-2024 00:02:02: session  :- Error :  2 
+19-03-2024 00:02:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 00:02:06: session  :- Error :  3 
+19-03-2024 00:02:06: session  :- Error :  2 
+19-03-2024 00:02:06: session  :- Error :  4 
+19-03-2024 00:05:42: session  :- Error :  2 
+19-03-2024 00:05:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 00:05:47: session  :- Error :  3 
+19-03-2024 00:05:47: session  :- Error :  2 
+19-03-2024 00:05:48: session  :- Error :  4 
+19-03-2024 00:10:29: session  :- Error :  2 
+19-03-2024 00:10:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 00:10:35: session  :- Error :  3 
+19-03-2024 00:10:35: session  :- Error :  2 
+19-03-2024 00:10:35: session  :- Error :  4 
+19-03-2024 00:17:16: session  :- Error :  2 
+19-03-2024 00:17:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 00:17:22: session  :- Error :  3 
+19-03-2024 00:17:22: session  :- Error :  2 
+19-03-2024 00:17:22: session  :- Error :  4 
+19-03-2024 21:21:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+19-03-2024 21:44:50: session  :- Error :  2 

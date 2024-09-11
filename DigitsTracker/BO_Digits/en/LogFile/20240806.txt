@@ -1,0 +1,9 @@
+2024-08-06 6.35.34 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.35.43 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.41.31 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.42.46 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.42.55 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.43.00 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.43.05 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.43.15 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-08-06 6.45.32 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

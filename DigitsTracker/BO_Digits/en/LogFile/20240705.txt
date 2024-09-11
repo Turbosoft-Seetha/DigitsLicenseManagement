@@ -1,0 +1,71 @@
+2024-07-05 2.22.00 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 2.35.28 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.35.42 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.36.41 PM: General Functions  :- sp_LicenseError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.40.10 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.40.24 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.40.28 PM: General Functions  :- sp_LicenseError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.40.45 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 2.58.37 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 2.59.12 PM: General Functions  :- sp_LeftNavigationError : Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. - The wait operation timed out
+2024-07-05 2.59.30 PM: General Functions  :- sp_LicenseError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The network location cannot be reached. For information about network troubleshooting, see Windows Help.) - The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2024-07-05 2.59.52 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The wait operation timed out.) - The wait operation timed out
+2024-07-05 2.59.52 PM: General Functions  :- sp_LeftNavigationError : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The wait operation timed out.) - The wait operation timed out
+2024-07-05 5.01.02 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.01.56 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.03.51 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.06.26 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.09.10 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.09.34 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.09.58 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.10.28 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.19.49 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.28.15 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.39.41 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.40.08 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.44.03 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.44.18 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.44.57 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.47.48 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.51.02 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.51.15 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.52.22 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.53.56 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 5.54.00 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.19.32 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.20.14 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.20.22 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.20.23 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.20.23 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.24.03 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.24.03 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.24.03 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.27.03 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.27.04 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.27.04 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.28.02 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.28.02 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.28.02 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.29.48 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.29.48 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.29.49 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.30.59 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.30.59 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.30.59 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.31.06 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.31.54 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.31.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.31.54 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.32.00 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.36.19 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.36.19 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.36.20 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.36.27 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.38.41 PM: General Functions  :- sp_LicenseError : Invalid object name 'tb_Customers'. - 
+2024-07-05 8.38.41 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.38.41 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.39.20 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.39.20 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.40.22 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-05 8.40.22 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-05 8.41.26 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 

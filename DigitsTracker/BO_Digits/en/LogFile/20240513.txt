@@ -1,0 +1,181 @@
+13-05-2024 10:22:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 17:57:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 17:57:38: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 17:57:38: session  :- Error :  1 
+13-05-2024 17:57:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:00:40: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:00:42: session  :- Error :  1 
+13-05-2024 18:01:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:01:44: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:01:45: session  :- Error :  1 
+13-05-2024 18:02:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:02:33: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:02:33: session  :- Error :  1 
+13-05-2024 18:02:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:02:58: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:02:59: session  :- Error :  1 
+13-05-2024 18:04:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:05:21: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:05:21: session  :- Error :  1 
+13-05-2024 18:05:22: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:05:23: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:05:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:05:40: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:05:40: session  :- Error :  1 
+13-05-2024 18:05:41: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:05:41: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:05:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:07:17: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:07:17: session  :- Error :  1 
+13-05-2024 18:07:17: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:07:17: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:07:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:07:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:07:41: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:07:41: session  :- Error :  1 
+13-05-2024 18:07:41: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:07:42: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:07:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:08:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:09:02: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:09:02: session  :- Error :  1 
+13-05-2024 18:09:03: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:09:03: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:09:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:09:47: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:09:47: session  :- Error :  1 
+13-05-2024 18:09:48: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:09:48: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:09:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:12:33: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:12:33: session  :- Error :  1 
+13-05-2024 18:12:33: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:12:34: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:12:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:17:17: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:17:25: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 18:17:25: session  :- Error :  1 
+13-05-2024 18:17:25: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:17:25: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:17:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:17:56: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+13-05-2024 18:17:56: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+13-05-2024 18:23:05: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+13-05-2024 18:23:05: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+13-05-2024 18:24:02: General Functions  :- sp_TransactionsError : Invalid column name 'uat_prt_ID'. - 
+13-05-2024 18:24:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:24:13: General Functions  :- sp_TransactionsError : Invalid column name 'uat_prt_ID'. - 
+13-05-2024 18:24:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:25:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:26:11: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:26:12: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:26:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:26:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:26:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:32:12: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:32:13: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:32:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:53:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:54:07: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:54:07: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:54:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:55:09: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:55:09: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:55:11: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 18:55:12: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 18:55:14: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:55:14: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 18:55:17: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 18:55:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:09:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:09:24: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:09:24: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:09:28: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:10:16: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:10:16: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:10:19: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:10:21: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:12:21: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:12:21: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:12:22: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:12:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:12:41: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:12:43: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:13:09: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:13:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:13:53: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:13:57: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 19:14:25: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:14:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:27:17: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:28:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:28:54: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:28:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:31:03: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 19:31:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 19:31:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 20:23:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 20:24:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 20:25:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 20:33:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:13:28: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:13:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:20:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:21:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:21:32: General Functions  :- sp_TransactionsError : An expression of non-boolean type specified in a context where a condition is expected, near 'pl_plf_ID'. - 
+13-05-2024 21:21:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:24:05: General Functions  :- sp_TransactionsError : Invalid column name 'uat_prt_ID'. - 
+13-05-2024 21:24:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 21:24:34: General Functions  :- sp_TransactionsError : Invalid column name 'uat_prt_ID'. - 
+13-05-2024 21:24:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:13:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:13:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:15:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:15:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:16:57: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:16:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:17:17: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:17:17: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:17:30: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:17:31: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:17:39: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:17:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:17:43: ListTracker.aspx :- TrackerReset_Click Error: Collection was modified; enumeration operation may not execute.
+13-05-2024 23:17:47: ListTracker.aspx :- TrackerReset_Click Error: Collection was modified; enumeration operation may not execute.
+13-05-2024 23:18:19: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 23:18:19: session  :- Error :  1 
+13-05-2024 23:18:19: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 23:18:20: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 23:18:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:18:36: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:18:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:19:19: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:19:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:27:15: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:27:17: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:27:44: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:27:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:28:23: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:28:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:29:40: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:29:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:31:49: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:31:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:33:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:33:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:34:38: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:34:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:35:37: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:35:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:37:44: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:37:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:49:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:49:57: session  :- Error :  ------------------------- Starts pageload------------
+13-05-2024 23:49:57: session  :- Error :  1 
+13-05-2024 23:49:58: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 23:49:58: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+13-05-2024 23:50:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:50:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:51:24: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 
+13-05-2024 23:51:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+13-05-2024 23:55:52: General Functions  :- sp_TransactionsError : Incorrect syntax near 'epl_plf_ID'. - 

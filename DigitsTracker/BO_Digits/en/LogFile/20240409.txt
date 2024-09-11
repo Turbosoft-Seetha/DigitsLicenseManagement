@@ -1,0 +1,66 @@
+09-04-2024 10:24:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 10:35:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 10:35:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 10:42:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:20:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:20:30: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:20:46: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:24:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:24:47: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:24:53: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:25:05: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:25:11: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:25:22: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:25:39: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:25:55: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:26:10: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:26:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:27:08: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:27:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:29:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:31:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:32:06: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:32:16: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:32:32: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:33:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:33:32: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '__Page' to data type int. - 
+09-04-2024 12:43:44: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:43:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 12:44:14: session  :- Error :  ------------------------- Starts pageload------------
+09-04-2024 12:44:14: session  :- Error :  1 
+09-04-2024 12:44:15: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-04-2024 12:44:15: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-04-2024 12:44:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:50:04: session  :- Error :  ------------------------- Starts pageload------------
+09-04-2024 23:50:04: session  :- Error :  1 
+09-04-2024 23:50:05: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-04-2024 23:50:05: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-04-2024 23:50:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:50:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:50:47: session  :- Error :  ------------------------- Starts pageload------------
+09-04-2024 23:50:47: session  :- Error :  1 
+09-04-2024 23:50:48: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-04-2024 23:50:49: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-04-2024 23:50:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:50:56: AddEditTracker.aspx FillForm() :- Error : Column 'trk_SuppImg' does not belong to table TT. - 
+09-04-2024 23:50:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:51:05: session  :- Error :  ------------------------- Starts pageload------------
+09-04-2024 23:51:05: session  :- Error :  1 
+09-04-2024 23:51:06: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-04-2024 23:51:06: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-04-2024 23:51:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:53:13: AddEditTracker.aspx FillForm() :- Error : Column 'trk_SuppImg' does not belong to table TT. - 
+09-04-2024 23:53:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:56:40: AddEditTracker.aspx FillForm() :- Error : Column 'trk_SuppImg' does not belong to table TT. - 
+09-04-2024 23:56:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:59:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+09-04-2024 23:59:28: session  :- Error :  ------------------------- Starts pageload------------
+09-04-2024 23:59:28: session  :- Error :  1 
+09-04-2024 23:59:29: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'. - 
+09-04-2024 23:59:29: General Functions  :- sp_TransactionsError : Invalid column name 'trk_prt_ID'.
+Invalid column name 'trk_plf_ID'. - 
+09-04-2024 23:59:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

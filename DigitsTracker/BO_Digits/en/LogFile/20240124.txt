@@ -1,0 +1,136 @@
+24-01-2024 16:37:57: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 16:37:57: session  :- Error :  1 
+24-01-2024 16:37:57: session  :- Error :  2 
+24-01-2024 16:37:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:38:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:46:06: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 16:46:06: session  :- Error :  1 
+24-01-2024 16:46:06: session  :- Error :  2 
+24-01-2024 16:46:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:46:21: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:50:14: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 16:50:14: session  :- Error :  1 
+24-01-2024 16:50:14: session  :- Error :  2 
+24-01-2024 16:50:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:53:37: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 16:53:37: session  :- Error :  1 
+24-01-2024 16:53:37: session  :- Error :  2 
+24-01-2024 16:53:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:53:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:53:47: ActionQueue.aspx TrackerLifeCycle() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+24-01-2024 16:53:59: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 16:53:59: session  :- Error :  1 
+24-01-2024 16:53:59: session  :- Error :  2 
+24-01-2024 16:54:00: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:54:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 16:54:08: ActionQueue.aspx TrackerLifeCycle() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+24-01-2024 17:12:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:10:17: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 18:10:17: session  :- Error :  1 
+24-01-2024 18:10:17: session  :- Error :  2 
+24-01-2024 18:10:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:10:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:15:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:16:18: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:16:20: ActionQueue.aspx TrackerLifeCycle() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+24-01-2024 18:16:31: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:16:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:19:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:19:55: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:20:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:21:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:24:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:25:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:26:19: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:27:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:27:55: ActionQueue.aspx TrackerLifeCycle() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+24-01-2024 18:30:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:30:43: ActionQueue.aspx TrackerLifeCycle() :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+24-01-2024 18:32:13: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 18:32:13: session  :- Error :  1 
+24-01-2024 18:32:13: session  :- Error :  2 
+24-01-2024 18:32:14: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:32:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:34:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:34:28: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 18:34:28: session  :- Error :  1 
+24-01-2024 18:34:28: session  :- Error :  2 
+24-01-2024 18:34:29: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 18:34:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 19:27:09: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 19:27:09: session  :- Error :  1 
+24-01-2024 19:27:09: session  :- Error :  2 
+24-01-2024 19:27:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 19:27:21: General Functions  :- sp_TransactionsError : Incorrect syntax near 'format'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:30:01: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 19:30:01: session  :- Error :  1 
+24-01-2024 19:30:01: session  :- Error :  2 
+24-01-2024 19:30:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 19:30:06: General Functions  :- sp_TransactionsError : Incorrect syntax near 'format'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:35:04: General Functions  :- sp_TransactionsError : Incorrect syntax near 'format'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:35:07: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 19:35:07: session  :- Error :  1 
+24-01-2024 19:35:07: session  :- Error :  2 
+24-01-2024 19:35:08: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 19:35:14: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'By'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:36:52: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'By'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:43:59: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'By'.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon. - 
+24-01-2024 19:44:03: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 19:44:03: session  :- Error :  1 
+24-01-2024 19:44:03: session  :- Error :  2 
+24-01-2024 19:44:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:32:43: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 21:32:43: session  :- Error :  1 
+24-01-2024 21:32:43: session  :- Error :  2 
+24-01-2024 21:32:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:32:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:33:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:33:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:33:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:33:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:33:23: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 21:33:23: session  :- Error :  1 
+24-01-2024 21:33:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:36:29: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 21:36:29: session  :- Error :  1 
+24-01-2024 21:36:29: session  :- Error :  2 
+24-01-2024 21:36:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+24-01-2024 21:36:36: session  :- Error :  ------------------------- Starts pageload------------
+24-01-2024 21:36:36: session  :- Error :  1 
+24-01-2024 21:36:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

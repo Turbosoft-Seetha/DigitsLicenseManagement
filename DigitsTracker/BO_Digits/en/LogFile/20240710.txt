@@ -1,0 +1,73 @@
+2024-07-10 7.00.03 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 7.00.59 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 7.01.07 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 7.01.10 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.20.41 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.21.12 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.21.12 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.21.23 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.21.33 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.29.36 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.29.40 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.29.41 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.29.44 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.29.47 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.30.24 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.30.33 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.30.40 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.30.43 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.14 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.18 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.27 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.31 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.45 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.50 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.32.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.27 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.30 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.36 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.39 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.43 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.48 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.51 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.34.58 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.35.00 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.38.32 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.38.36 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.38.36 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.40.53 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.40.53 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.41.31 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.51.23 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.51.23 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.51.32 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.52.49 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.52.49 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.52.56 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.53.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.53.54 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.54.10 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.55.07 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.55.07 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.55.13 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.58.17 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.58.25 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 8.58.25 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 8.58.31 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.00.29 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.00.29 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.00.36 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.03.13 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.03.13 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.03.22 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.05.02 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.06.06 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.06.06 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.06.13 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.06.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.06.55 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.07.00 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.07.37 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-10 9.07.37 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 
+2024-07-10 9.07.45 PM: AddEditLicenseManagement.aspx :- Error : You should not call DataBind in NeedDataSource event handler. DataBind would take place automatically right after NeedDataSource handler finishes execution. - 

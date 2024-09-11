@@ -1,0 +1,6 @@
+30-05-2024 00:19:21: session  :- Error :  ------------------------- Starts pageload------------
+30-05-2024 00:19:21: session  :- Error :  1 
+30-05-2024 00:19:22: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+30-05-2024 00:19:22: General Functions  :- sp_TransactionsError : Incorrect syntax near the keyword 'Group'. - 
+30-05-2024 00:19:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+30-05-2024 00:19:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

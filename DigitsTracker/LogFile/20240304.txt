@@ -1,0 +1,1 @@
+04-03-2024 16:08:19: General Functions  :- sp_UserError : A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.) - The wait operation timed out

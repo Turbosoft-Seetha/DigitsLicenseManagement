@@ -1,0 +1,95 @@
+28-01-2024 15:46:50: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 15:46:50: session  :- Error :  1 
+28-01-2024 15:46:50: session  :- Error :  2 
+28-01-2024 15:46:52: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:47:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:47:25: ApprovedLeaveReq.aspx  :- Error : String was not recognized as a valid DateTime. - 
+28-01-2024 15:48:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:48:59: ApprovedLeaveReq.aspx  :- Error : String was not recognized as a valid DateTime. - 
+28-01-2024 15:49:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:49:34: ApprovedLeaveReq.aspx  :- Error : String was not recognized as a valid DateTime. - 
+28-01-2024 15:49:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:50:20: ApprovedLeaveReq.aspx  :- Error : String was not recognized as a valid DateTime. - 
+28-01-2024 15:50:41: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 15:50:41: session  :- Error :  1 
+28-01-2024 15:50:41: session  :- Error :  2 
+28-01-2024 15:50:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:51:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:52:08: General Functions  :- sp_MastersError : An expression of non-boolean type specified in a context where a condition is expected, near '('. - 
+28-01-2024 15:52:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:56:43: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 15:56:43: session  :- Error :  1 
+28-01-2024 15:56:43: session  :- Error :  2 
+28-01-2024 15:56:45: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:57:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:57:09: General Functions  :- sp_MastersError : An expression of non-boolean type specified in a context where a condition is expected, near '('. - 
+28-01-2024 15:57:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 15:57:32: General Functions  :- sp_MastersError : An expression of non-boolean type specified in a context where a condition is expected, near '('. - 
+28-01-2024 16:07:11: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 16:07:11: session  :- Error :  1 
+28-01-2024 16:07:11: session  :- Error :  2 
+28-01-2024 16:07:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 16:07:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 16:07:30: General Functions  :- sp_MastersError : Invalid column name 'trk_AssignedEmp_ID'.
+Invalid column name 'trk_AssignedEmp_ID'.
+Invalid column name 'trk_ID'. - 
+28-01-2024 16:25:11: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:25:14: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:26:41: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 16:26:41: session  :- Error :  1 
+28-01-2024 16:26:41: session  :- Error :  2 
+28-01-2024 16:26:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 16:27:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 16:27:13: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:27:27: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:27:29: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:27:31: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 16:27:51: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 16:28:05: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 17:01:46: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 17:01:46: session  :- Error :  1 
+28-01-2024 17:01:46: session  :- Error :  2 
+28-01-2024 17:01:48: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:02:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:02:50: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'order'. - 
+28-01-2024 17:13:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:18:47: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 17:18:47: session  :- Error :  1 
+28-01-2024 17:18:47: session  :- Error :  2 
+28-01-2024 17:18:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:19:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:24:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:24:18: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:24:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:24:46: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:26:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:26:04: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:27:39: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:27:42: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:30:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:30:07: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:30:48: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 17:30:48: session  :- Error :  1 
+28-01-2024 17:30:48: session  :- Error :  2 
+28-01-2024 17:30:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:31:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:31:12: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:33:24: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:33:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:33:28: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:33:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:33:40: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:34:29: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:34:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:34:39: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'Group'. - 
+28-01-2024 17:39:12: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 17:39:12: session  :- Error :  1 
+28-01-2024 17:39:12: session  :- Error :  2 
+28-01-2024 17:39:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:39:30: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:39:35: General Functions  :- sp_MastersError : Incorrect syntax near the keyword 'group'. - 
+28-01-2024 17:50:45: session  :- Error :  ------------------------- Starts pageload------------
+28-01-2024 17:50:45: session  :- Error :  1 
+28-01-2024 17:50:45: session  :- Error :  2 
+28-01-2024 17:50:47: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+28-01-2024 17:51:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

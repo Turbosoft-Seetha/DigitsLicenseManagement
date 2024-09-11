@@ -1,0 +1,2003 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE109F3F-8D84-4B26-9910-AAA098132F31}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitsTracker</RootNamespace>
+    <AssemblyName>DigitsTracker</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Ecosoft.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ecosoft.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleApi, Version=4.5.1.0, Culture=neutral, PublicKeyToken=781851e053b06e74, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GoogleApi.dll</HintPath>
+    </Reference>
+    <Reference Include="LibExcel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.LibExcel.2022.4.1\lib\net452\LibExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authentication.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authentication.Core.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization.Policy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.Policy.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.Policy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Extensions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Core.2.2.5\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.ResponseCaching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.1.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.2.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.2.1.0\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Process Excel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Process Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Blockly, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Blockly.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2024.2.2\lib\net472\Stimulsoft.Dashboard.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Drawing, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2024.2.2\lib\net472\Stimulsoft.Dashboard.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Dashboard.Export, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Dashboards.Web.2024.2.2\lib\net472\Stimulsoft.Dashboard.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Data, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Map, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Engine.2024.2.2\lib\net472\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2024.2.2\lib\net472\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2024.2.2\lib\net472\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebDesign, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Reports.Web.2024.2.2\lib\net472\Stimulsoft.Report.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Svg, Version=2024.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stimulsoft.Svg.2024.2.2\lib\net472\Stimulsoft.Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.9\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Documents.SpreadsheetStreaming, Version=2020.2.615.20, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Documents.SpreadsheetStreaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2019.2.514.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2020.2.615.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2020.2.615.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip.Extensions, Version=2019.2.503.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Windows.Zip.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Zip, Version=2020.2.615.20, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Zip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivateAccounts.aspx" />
+    <Content Include="BO_Digits\assets\CancelModal.js" />
+    <Content Include="BO_Digits\assets\Chart.js" />
+    <Content Include="BO_Digits\assets\css\style.bundle.css" />
+    <Content Include="BO_Digits\assets\css\style.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\js\custom\account\api-keys\api-keys.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\orders\classic.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\referrals\referral-program.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\security\license-usage.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\security\security-summary.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\settings\deactivate-account.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\settings\overview.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\settings\profile-details.js" />
+    <Content Include="BO_Digits\assets\js\custom\account\settings\signin-methods.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\calendar\calendar.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\chat\chat.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\contacts\edit-contact.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\contacts\view-contact.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\add.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\list\export.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\list\list.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\update.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\add-payment.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\adjust-balance.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\invoices.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\payment-method.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\payment-table.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\customers\view\statement.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\catalog\categories.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\catalog\products.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\catalog\save-category.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\catalog\save-product.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\add-address.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\add-auth-app.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\add-one-time-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\payment-method.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\transaction-history.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\update-address.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\update-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\update-phone.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\details\update-profile.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\listing\add.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\listing\export.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\customers\listing\listing.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\reports\customer-orders\customer-orders.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\reports\returns\returns.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\reports\sales\sales.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\reports\shipping\shipping.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\reports\views\views.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\sales\listing.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\sales\save-order.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\ecommerce\settings\settings.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\file-manager\list.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\file-manager\settings.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\inbox\compose.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\inbox\listing.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\inbox\reply.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\invoices\create.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\projects\list\list.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\projects\project\project.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\projects\settings\settings.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\projects\targets\targets.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\projects\users\users.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\subscriptions\add\advanced.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\subscriptions\add\customer-select.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\subscriptions\add\products.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\subscriptions\list\export.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\subscriptions\list\list.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\support-center\tickets\create.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\permissions\add-permission.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\permissions\list.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\permissions\update-permission.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\roles\list\add.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\roles\list\update-role.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\roles\view\update-role.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\roles\view\view.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\list\add.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\list\export-users.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\list\table.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\add-auth-app.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\add-one-time-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\add-schedule.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\add-task.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\update-details.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\update-email.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\update-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\update-role.js" />
+    <Content Include="BO_Digits\assets\js\custom\apps\user-management\users\view\view.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\reset-password\new-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\reset-password\reset-password.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-in\general.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-in\i18n.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-in\two-steps.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-up\coming-soon.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-up\free-trial.js" />
+    <Content Include="BO_Digits\assets\js\custom\authentication\sign-up\general.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\base\forms\advanced.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\base\indicator.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\base\modal.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\base\rotate.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\base\toasts.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\amcharts\charts.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\amcharts\maps.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\amcharts\stock-charts.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\apexcharts.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\chartjs.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\axis.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\bar.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\dynamic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\pie.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\stack.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\flotcharts\tracking.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\google-charts\column.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\google-charts\line.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\charts\google-charts\pie.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\documentation.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\ckeditor\balloon-block.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\ckeditor\balloon.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\ckeditor\classic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\ckeditor\document.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\ckeditor\inline.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\quill\autosave.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\quill\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\tinymce\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\tinymce\hidden.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\editors\tinymce\plugins.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\bootstrap-maxlength.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\bootstrap-select.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\clipboard.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\daterangepicker.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\dialer.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\dropzonejs.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\flatpickr.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\formrepeater\advanced.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\formrepeater\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\formrepeater\nested.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\formvalidation\advanced.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\formvalidation\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\image-input.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\inputmask.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\multiselectsplitter.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\nouislider.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\password-meter.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\recaptcha.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\select2.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\forms\tagify.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\blockui.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\cropper.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\advanced.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\api.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\buttons\column-visibility.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\buttons\export.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\server-side.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\datatables\subtable.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\draggable\cards.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\draggable\multiple-containers.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\draggable\restricted.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\draggable\swappable.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\drawer.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\background-events.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\drag-n-drop.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\locales.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\selectable-dates.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\fullcalendar\timezone.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jkanban\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jkanban\color.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jkanban\fixed-height.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jkanban\restricted.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jkanban\rich.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\ajax.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\checkable.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\contextual.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\customicons.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\jstree\dragdrop.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\scroll.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\search\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\search\menu.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\search\responsive.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\stepper.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\sweetalert.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\toastr.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\typed.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\vis-timeline\basic.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\vis-timeline\group.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\vis-timeline\interaction.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\vis-timeline\style.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\general\vis-timeline\template.js" />
+    <Content Include="BO_Digits\assets\js\custom\documentation\search.js" />
+    <Content Include="BO_Digits\assets\js\custom\intro.js" />
+    <Content Include="BO_Digits\assets\js\custom\landing.js" />
+    <Content Include="BO_Digits\assets\js\custom\layout-builder\layout-builder.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\careers\apply.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\general\contact.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\general\pos.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\pricing\general.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\social\feeds.js" />
+    <Content Include="BO_Digits\assets\js\custom\pages\user-profile\followers.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\bidding.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-account.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-api-key.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-app.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-campaign.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\budget.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\complete.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\files.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\main.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\settings.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\targets.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\team.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\create-project\type.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\new-address.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\new-card.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\new-target.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\offer-a-deal\complete.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\offer-a-deal\details.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\offer-a-deal\finance.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\offer-a-deal\main.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\offer-a-deal\type.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\select-location.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\share-earn.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\top-up-wallet.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\two-factor-authentication.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\upgrade-plan.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\modals\users-search.js" />
+    <Content Include="BO_Digits\assets\js\custom\utilities\search\horizontal.js" />
+    <Content Include="BO_Digits\assets\js\custom\widgets.js" />
+    <Content Include="BO_Digits\assets\js\scripts.bundle.js" />
+    <Content Include="BO_Digits\assets\js\widgets.bundle.js" />
+    <Content Include="BO_Digits\assets\media\auth\404-error-dark.png" />
+    <Content Include="BO_Digits\assets\media\auth\404-error.png" />
+    <Content Include="BO_Digits\assets\media\auth\500-error-dark.png" />
+    <Content Include="BO_Digits\assets\media\auth\500-error.png" />
+    <Content Include="BO_Digits\assets\media\auth\505-error-dark.png" />
+    <Content Include="BO_Digits\assets\media\auth\505-error.png" />
+    <Content Include="BO_Digits\assets\media\avatars\blank.png" />
+    <Content Include="BO_Digits\assets\media\bg\bg11.png" />
+    <Content Include="BO_Digits\assets\media\bg\bg4.jpg" />
+    <Content Include="BO_Digits\assets\media\bg\bg5.jpg" />
+    <Content Include="BO_Digits\assets\media\bg\Group_1863%402x.png" />
+    <Content Include="BO_Digits\assets\media\bg\Group_1863.png" />
+    <Content Include="BO_Digits\assets\media\bg\Group_2279.png" />
+    <Content Include="BO_Digits\assets\media\bg\loader.gif" />
+    <Content Include="BO_Digits\assets\media\bg\logo.svg" />
+    <Content Include="BO_Digits\assets\media\dashboard\advance2.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\agreements%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\agreements.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\ar2.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\bg.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\br.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Cancelled%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Cancelled.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\complaint%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\complaint.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Confirmed%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Confirmed.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\customers%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\customers.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Delivered%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Delivered.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Despatched%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Despatched.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\foc.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\gr.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\invoices.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\items%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\items.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\bs%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\bs.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\check-mark%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\check-mark.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\cheque%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\cheque.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\credit%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\credit.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\cross%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\cross.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\exclamation%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\exclamation.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\gs%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\gs.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\hc%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\hc.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\op%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\op.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\orders%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\orders.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\li_completed%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\li_completed.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\Rectangle -1%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\Rectangle -1.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\Rectangle 517%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\Rectangle 517.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\sales%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\Pills\sales.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\pos%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\pos.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\tick%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\tick.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\timeline%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\KPI\timeline.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\OrderPicked%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\OrderPicked.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\orderreq2.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Processed%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Processed.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Received%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\Received.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\scheduled%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\scheduled.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\scheduled_1%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\scheduled_1.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\survey%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\survey.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\task%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\task.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\timeline.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\total%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\total.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\total_1%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\total_1.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\unscheduled%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\unscheduled.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\unscheduled_1%402x.png" />
+    <Content Include="BO_Digits\assets\media\dashboard\unscheduled_1.png" />
+    <Content Include="BO_Digits\assets\media\email\icon-bullet.svg" />
+    <Content Include="BO_Digits\assets\media\email\icon-dribbble.svg" />
+    <Content Include="BO_Digits\assets\media\email\icon-facebook.svg" />
+    <Content Include="BO_Digits\assets\media\email\icon-linkedin.svg" />
+    <Content Include="BO_Digits\assets\media\email\icon-positive-vote.svg" />
+    <Content Include="BO_Digits\assets\media\email\icon-twitter.svg" />
+    <Content Include="BO_Digits\assets\media\icons\attach.png" />
+    <Content Include="BO_Digits\assets\media\icons\Compass.svg" />
+    <Content Include="BO_Digits\assets\media\icons\date.png" />
+    <Content Include="BO_Digits\assets\media\icons\Detail.png" />
+    <Content Include="BO_Digits\assets\media\icons\details.png" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs013.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs014.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs015.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs016.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs017.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs018.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs019.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs020.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs021.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs022.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs023.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs024.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs025.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs026.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs027.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs028.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs029.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs030.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs031.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs032.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs033.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs034.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs035.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs036.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs037.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs038.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs039.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs040.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs041.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs042.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs043.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs044.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs045.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs046.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs047.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs048.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs049.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs050.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs051.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\abstract\abs052.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr013.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr014.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr015.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr016.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr017.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr018.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr019.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr020.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr021.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr022.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr023.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr024.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr025.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr026.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr027.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr028.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr029.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr030.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr031.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr032.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr033.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr034.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr035.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr036.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr037.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr038.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr039.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr040.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr041.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr042.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr043.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr044.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr045.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr046.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr047.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr048.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr049.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr050.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr051.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr052.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr053.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr054.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr055.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr056.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr057.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr058.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr059.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr060.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr061.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr062.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr063.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr064.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr065.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr066.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr067.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr068.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr069.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr070.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr071.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr072.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr073.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr074.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr075.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr076.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr077.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr078.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr079.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr080.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr081.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr082.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr084.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr085.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr086.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr087.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr088.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr089.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr090.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr091.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr092.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr093.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr094.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr095.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\arrows\arr096.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\art\art010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\coding\cod010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com013.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\communication\com014.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\ecommerce\ecm011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\electronics\elc010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil013.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil014.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil015.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil016.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil017.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil018.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil019.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil020.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil021.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil022.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil023.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil024.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\files\fil025.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\finance\fin010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen013.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen014.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen015.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen016.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen017.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen018.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen019.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen020.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen021.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen022.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen023.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen024.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen025.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen026.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen027.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen028.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen029.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen030.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen031.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen032.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen033.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen034.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen035.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen036.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen037.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen038.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen039.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen040.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen041.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen042.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen043.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen044.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen045.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen046.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen047.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen048.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen049.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen050.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen051.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen052.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen053.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen054.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen055.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen056.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen057.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen058.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen059.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen060.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen061.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\general\gen062.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra011.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\graphs\gra012.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\layouts\lay010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\maps\map010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\medicine\med010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\social\soc010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\technology\teh010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt001.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt002.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt003.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt004.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt005.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt006.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt007.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt008.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt009.svg" />
+    <Content Include="BO_Digits\assets\media\icons\duotune\text\txt010.svg" />
+    <Content Include="BO_Digits\assets\media\icons\endday1.png" />
+    <Content Include="BO_Digits\assets\media\icons\excel.png" />
+    <Content Include="BO_Digits\assets\media\icons\fail.svg" />
+    <Content Include="BO_Digits\assets\media\icons\File-cloud.svg" />
+    <Content Include="BO_Digits\assets\media\icons\file.png" />
+    <Content Include="BO_Digits\assets\media\icons\Icon-feather-download.svg" />
+    <Content Include="BO_Digits\assets\media\icons\imagenotavailable.png" />
+    <Content Include="BO_Digits\assets\media\icons\lifecycle.svg" />
+    <Content Include="BO_Digits\assets\media\icons\loader.gif" />
+    <Content Include="BO_Digits\assets\media\icons\loading.gif" />
+    <Content Include="BO_Digits\assets\media\icons\merch2.png" />
+    <Content Include="BO_Digits\assets\media\icons\others2.png" />
+    <Content Include="BO_Digits\assets\media\icons\Position.svg" />
+    <Content Include="BO_Digits\assets\media\icons\preview.png" />
+    <Content Include="BO_Digits\assets\media\icons\startday.png" />
+    <Content Include="BO_Digits\assets\media\icons\success.svg" />
+    <Content Include="BO_Digits\assets\media\icons\timesheet.png" />
+    <Content Include="BO_Digits\assets\media\icons\tracker.png" />
+    <Content Include="BO_Digits\assets\media\icons\unassigned.png" />
+    <Content Include="BO_Digits\assets\media\icons\WorkFlow.png" />
+    <Content Include="BO_Digits\assets\media\Images\header_spring.jpg" />
+    <Content Include="BO_Digits\assets\media\Images\header_summer.jpg" />
+    <Content Include="BO_Digits\assets\media\Images\header_winter.jpg" />
+    <Content Include="BO_Digits\assets\media\Images\specialsprite.gif" />
+    <Content Include="BO_Digits\assets\media\logos\arabic.svg" />
+    <Content Include="BO_Digits\assets\media\logos\code.txt" />
+    <Content Include="BO_Digits\assets\media\logos\digitstracker.svg" />
+    <Content Include="BO_Digits\assets\media\logos\english.svg" />
+    <Content Include="BO_Digits\assets\media\logos\favicon.png" />
+    <Content Include="BO_Digits\assets\media\logos\Group_2278%402x.png" />
+    <Content Include="BO_Digits\assets\media\logos\Group_2278.png" />
+    <Content Include="BO_Digits\assets\media\logos\logo_digits.png" />
+    <Content Include="BO_Digits\assets\media\logos\Tracker_Logo.png" />
+    <Content Include="BO_Digits\assets\media\logos\tracker_logos.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\asset.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\competitor.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\complaints.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\displayagreement.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\imagecapture.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\inventory.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\itemavailability.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\outofstock.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\pricing.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\survey.png" />
+    <Content Include="BO_Digits\assets\media\MerchTransaction\task.png" />
+    <Content Include="BO_Digits\assets\media\route\top-green.png" />
+    <Content Include="BO_Digits\assets\media\Security\file.png" />
+    <Content Include="BO_Digits\assets\media\Security\folder.png" />
+    <Content Include="BO_Digits\assets\media\Security\section.png" />
+    <Content Include="BO_Digits\assets\media\Security\subFolder.png" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\001-boy.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\002-girl.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\003-girl-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\004-boy-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\005-girl-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\006-girl-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\007-boy-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\008-boy-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\009-boy-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\010-girl-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\011-boy-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\012-girl-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\013-girl-6.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\014-girl-7.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\015-boy-6.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\016-boy-7.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\017-girl-8.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\018-girl-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\019-girl-10.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\020-girl-11.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\021-boy-8.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\022-girl-12.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\023-girl-13.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\024-boy-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\025-girl-14.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\026-boy-10.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\027-girl-15.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\028-girl-16.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\029-boy-11.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\030-girl-17.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\031-boy-12.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\032-boy-13.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\033-girl-18.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\034-boy-14.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\035-boy-15.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\036-girl-19.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\037-girl-20.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\038-boy-16.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\039-girl-21.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\040-boy-17.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\041-girl-22.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\042-girl-23.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\043-boy-18.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\044-boy-19.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\045-boy-20.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\046-girl-24.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\047-girl-25.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\048-boy-21.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\049-boy-22.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\050-girl-26.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\blank-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\avatars\blank.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\adidas-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\adidas.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\airbnb-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\alcatel-mobile-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\amazon-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\amazon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\android-wordmark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\angular-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\angular-icon-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\angular-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\angular.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\aon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\apigee.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\apple-black-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\apple-black.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\apple-itunes.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\aries-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\asml-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\aspnetzero.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\atica.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\audi-11.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\aven.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\avis-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\avocode-inc.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\balloon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\banco-santander-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\beats-electronics.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bebo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\behance.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\biman-airlines-classic-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bookingcom-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bootstrap-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bootstrap-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bootstrap5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bose.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bp-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bp-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\brantano.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\bride.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\british-council-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\brondi.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\campingaz-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\canon-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\carrols.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\casio.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\caterpillar-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\citrix-6002.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\code-lab.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\codeigniter.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\comcast.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\conair.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\costa-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\costco-wholesale-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\css-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\decathlon-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\deloitte-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\depend.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\diesel-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\disqus.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\django-community.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\dribbble-icon-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\dribbble-pink.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\duolingo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\dynamac.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ebay.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ember.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\envato.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\espacio-urbano.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\etoys-com.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\facebook-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\facebook-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\facebook-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\facebook-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\farmers-insurance-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\figma-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\foursquare.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\fox-hub.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\friday-s.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\fujifilm.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\funding-circle.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\garmin-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\general-electric.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\github-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\github-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\github-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\github.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\gitlab.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\google-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\google-photos.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\google-play-store.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\google-podcasts.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\google-tag-manager.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\gradiente-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\gulp-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\gulp.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\hbo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\heavylift.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\hilton-buenos-aires.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\himel.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\honda-7.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\hp-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\hp-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\hp-hewlett-packard.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\html5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\huggies-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ikon-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\infography.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\instagram-2-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\instagram-2016.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\intermarche-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\invision.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\javascript-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\javascript-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\javascript.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\jelcz.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\jfits.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\jquery-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\jquery.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\kanba.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\keysight-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\kickstarter.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\komatsu-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\koni-special.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\kpmg.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\laravel-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\last-fm-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\leaf.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\leclerc-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\legrand.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\leica-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\levis.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\lg-electronics.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\lidl-supermarkets.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\linkedin-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\linkedin-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\linkedin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\lloyds-of-london-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\mastercard-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\maxis-communications-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\metro-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\metro-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\metro-by-t-mobile.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\microsoft-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\miller-6.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\minol.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\mnd.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\msn.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\mysql-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\nasa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\nestle-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\new-beko-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\nike-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\node-sass.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\noht.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\npm.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ocaml.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\oger-tours.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\origin-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\paypie.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\pinterest-p.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\pinterest.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\plurk.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\puma-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\python-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\quilosa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\react-native-firebase-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\react-router.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\react.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\redbull.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\reddit.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\rgb.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\sass-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\seat-pg.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\sentry-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\shell.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\siplast.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\slack-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\slack-new-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\slack.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\smartphone.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\snowbird.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\soriana-logo-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\sparkpost.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\spotify-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\spotify-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\spotify.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\spring-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\sprint-nextel.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\stabilo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\strava-wordmark-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\stream-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\super-cuts.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\suzuki-motor-corporation-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\suzuki.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\swarm.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\syngenta.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\telegram-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\telegram.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\tempstar.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\the-blockchain-group-tbg.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\thomas-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\thuisbezorgd.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\thule-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ticketmaster-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\tofas-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\tower.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\treva.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\trimble-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\trivago.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\truman.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\tvit.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\twitch.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\twitter-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\twitter.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\typescript-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\unilever-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\university-of-cambridge.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\urw-software.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\verizon-2015.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\vimeo-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\vimeo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\visa-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\visa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\vodafone.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\volicity-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\vue-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\vype.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\webasto-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\webpack-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\webpack.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\west-marine.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\worth.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\xing-icon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\youtube-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\youtube-play.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\youtube.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\ziprecruiter-blacktext.svg" />
+    <Content Include="BO_Digits\assets\media\svg\brand-logos\zurich-logo.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\american-express-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\american-express.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\bitcoin 1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\dark\american-express.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\dark\mastercard.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\dark\visa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\mastercard-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\mastercard.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\visa-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\card-logos\visa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\binance.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\bitcoin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\chainlink.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\coin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\ethereum.svg" />
+    <Content Include="BO_Digits\assets\media\svg\coins\filecoin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\ai-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\ai.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\blank-image-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\blank-image.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\css-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\css.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\ai.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\css.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\doc.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\folder-document.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\pdf.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\sql.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\tif.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\upload.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\dark\xml.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\doc-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\doc.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\File.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\folder-document-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\folder-document.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\pdf-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\pdf.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\sql-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\sql.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\tif-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\tif.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\upload-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\upload.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\xml-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\files\xml.svg" />
+    <Content Include="BO_Digits\assets\media\svg\food-icons\cheeseburger.svg" />
+    <Content Include="BO_Digits\assets\media\svg\food-icons\cheesecake.svg" />
+    <Content Include="BO_Digits\assets\media\svg\food-icons\coffee.svg" />
+    <Content Include="BO_Digits\assets\media\svg\food-icons\salad.svg" />
+    <Content Include="BO_Digits\assets\media\svg\food-icons\spaghetti.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Clipboard.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Compass.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Customer.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\details.png" />
+    <Content Include="BO_Digits\assets\media\svg\general\Details.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\edit.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\greater.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Half-star.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\JourneyPlan.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\map.png" />
+    <Content Include="BO_Digits\assets\media\svg\general\Products.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Question-circle.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\rhone.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\right-arrow.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\settlement.png" />
+    <Content Include="BO_Digits\assets\media\svg\general\Star.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\Trash.svg" />
+    <Content Include="BO_Digits\assets\media\svg\general\vanstock.png" />
+    <Content Include="BO_Digits\assets\media\svg\general\workingdays.svg" />
+    <Content Include="BO_Digits\assets\media\svg\humans\custom-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\1-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\2-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\3-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\6.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\easy\7.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\landing.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\sigma\illustration-realestate.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\sigma\question.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\sigma\volume-1-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\illustrations\sigma\volume-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\eolic-energy.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\hot-air-balloon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\infography.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\octagon.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\puzzle.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\recycling.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\retweet.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\smartphone-2-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\smartphone-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\smartphone-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\smartphone.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\taieri.svg" />
+    <Content Include="BO_Digits\assets\media\svg\misc\video-play.svg" />
+    <Content Include="BO_Digits\assets\media\svg\payment-methods\americanexpress.svg" />
+    <Content Include="BO_Digits\assets\media\svg\payment-methods\mastercard.svg" />
+    <Content Include="BO_Digits\assets\media\svg\payment-methods\paypal.svg" />
+    <Content Include="BO_Digits\assets\media\svg\payment-methods\visa.svg" />
+    <Content Include="BO_Digits\assets\media\svg\products-categories\gaming.svg" />
+    <Content Include="BO_Digits\assets\media\svg\products-categories\gloves.svg" />
+    <Content Include="BO_Digits\assets\media\svg\products-categories\shoes.svg" />
+    <Content Include="BO_Digits\assets\media\svg\products-categories\t-shirt.svg" />
+    <Content Include="BO_Digits\assets\media\svg\products-categories\watch.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-1-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-1.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-10.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-2-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-2.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-3-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-3.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-4-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-4.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-5-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-5.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-6.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-7.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-8.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\abstract-9.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\bitcoin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\dogecoin.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\ethereum.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\man-head.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\top-green.png" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\wave-bg-dark.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\wave-bg-purple.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\wave-bg-red.svg" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\widget-bg-1.png" />
+    <Content Include="BO_Digits\assets\media\svg\shapes\widget-bg-2.png" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\dribbble.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\facebook.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\github.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\google.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\instagram.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\twitter.svg" />
+    <Content Include="BO_Digits\assets\media\svg\social-logos\youtube.svg" />
+    <Content Include="BO_Digits\assets\media\theme\logo.png" />
+    <Content Include="BO_Digits\assets\media\UDP\advance%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\advance.png" />
+    <Content Include="BO_Digits\assets\media\UDP\ar%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\ar.png" />
+    <Content Include="BO_Digits\assets\media\UDP\duration%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\duration.png" />
+    <Content Include="BO_Digits\assets\media\UDP\excel%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\excel.png" />
+    <Content Include="BO_Digits\assets\media\UDP\invoice%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\invoice.png" />
+    <Content Include="BO_Digits\assets\media\UDP\kpi%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\kpi.png" />
+    <Content Include="BO_Digits\assets\media\UDP\lastupdate.png" />
+    <Content Include="BO_Digits\assets\media\UDP\merch2.png" />
+    <Content Include="BO_Digits\assets\media\UDP\orders%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\orders.png" />
+    <Content Include="BO_Digits\assets\media\UDP\others2.png" />
+    <Content Include="BO_Digits\assets\media\UDP\reset%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\reset.png" />
+    <Content Include="BO_Digits\assets\media\UDP\settlement%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\settlement.png" />
+    <Content Include="BO_Digits\assets\media\UDP\tracking%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\tracking.png" />
+    <Content Include="BO_Digits\assets\media\UDP\User%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\User.png" />
+    <Content Include="BO_Digits\assets\media\UDP\version%402x.png" />
+    <Content Include="BO_Digits\assets\media\UDP\version.png" />
+    <Content Include="BO_Digits\assets\plugins\custom\ckeditor\ckeditor-balloon-block.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\ckeditor\ckeditor-balloon.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\ckeditor\ckeditor-classic.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\ckeditor\ckeditor-document.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\ckeditor\ckeditor-inline.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\cookiealert\cookiealert.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\cookiealert\cookiealert.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\cookiealert\cookiealert.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\cropper\cropper.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\cropper\cropper.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\cropper\cropper.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\datatables\datatables.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\datatables\datatables.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\datatables\datatables.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\draggable\draggable.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\flotcharts\flotcharts.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\formrepeater\formrepeater.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\fslightbox\fslightbox.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\fullcalendar\fullcalendar.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\fullcalendar\fullcalendar.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\fullcalendar\fullcalendar.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\jkanban\jkanban.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\jkanban\jkanban.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\jkanban\jkanban.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\jstree\images\jstree\32px.png" />
+    <Content Include="BO_Digits\assets\plugins\custom\jstree\images\jstree\throbber.gif" />
+    <Content Include="BO_Digits\assets\plugins\custom\jstree\jstree.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\jstree\jstree.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\jstree\jstree.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\leaflet\leaflet.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\leaflet\leaflet.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\leaflet\leaflet.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\prismjs\prismjs.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\prismjs\prismjs.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\prismjs\prismjs.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\dark\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\dark\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\dark\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\dark\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\default\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\default\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\default\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\default\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\document\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\document\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\document\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\document\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\writer\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\writer\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\writer\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\content\writer\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.inline.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.inline.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.inline.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.mobile.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.mobile.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.mobile.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.mobile.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.mobile.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.mobile.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.mobile.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.mobile.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.shadowdom.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.shadowdom.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.shadowdom.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide-dark\skin.shadowdom.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.inline.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.inline.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.inline.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.mobile.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.mobile.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.mobile.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.mobile.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\content.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.mobile.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.mobile.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.mobile.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.mobile.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.shadowdom.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.shadowdom.min.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.shadowdom.min.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\skins\ui\oxide\skin.shadowdom.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\tinymce\tinymce.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\typedjs\typedjs.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\vis-timeline\vis-timeline.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\custom\vis-timeline\vis-timeline.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\custom\vis-timeline\vis-timeline.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-brands-400.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-regular-400.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-solid-900.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-v4compatibility.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\%40fortawesome\fa-v4compatibility.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\bootstrap-icons\bootstrap-icons.woff" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\bootstrap-icons\bootstrap-icons.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.css" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.eot" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.svg" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.woff" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\fonticon\fonticon.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-brands-400.eot" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-brands-400.svg" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-brands-400.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-brands-400.woff" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-brands-400.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-regular-400.eot" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-regular-400.svg" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-regular-400.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-regular-400.woff" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-regular-400.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-solid-900.eot" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-solid-900.svg" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-solid-900.ttf" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-solid-900.woff" />
+    <Content Include="BO_Digits\assets\plugins\global\fonts\line-awesome\la-solid-900.woff2" />
+    <Content Include="BO_Digits\assets\plugins\global\plugins.bundle.css" />
+    <Content Include="BO_Digits\assets\plugins\global\plugins.bundle.js" />
+    <Content Include="BO_Digits\assets\plugins\global\plugins.bundle.rtl.css" />
+    <Content Include="BO_Digits\assets\plugins\global\sourcemaps\tiny-slider.css.map" />
+    <Content Include="BO_Digits\en\AddEditCustomer.aspx" />
+    <Content Include="BO_Digits\en\AddEditLicenseManagement.aspx" />
+    <Content Include="BO_Digits\en\AddEditLicenseTypes.aspx" />
+    <Content Include="BO_Digits\en\AddEditPlatforms.aspx" />
+    <Content Include="BO_Digits\en\AddEditProjects.aspx" />
+    <Content Include="BO_Digits\en\AddEditUser.aspx" />
+    <Content Include="BO_Digits\en\LicenseManagement.aspx" />
+    <Content Include="BO_Digits\en\LicenseManagementDetail.aspx" />
+    <Content Include="BO_Digits\en\ListCustomer.aspx" />
+    <Content Include="BO_Digits\en\ListLicenseTypes.aspx" />
+    <Content Include="BO_Digits\en\ListPlatforms.aspx" />
+    <Content Include="BO_Digits\en\ListProjectCustomers.aspx" />
+    <Content Include="BO_Digits\en\ListProjects.aspx" />
+    <Content Include="BO_Digits\en\Roles.aspx" />
+    <Content Include="BO_Digits\en\Security.aspx" />
+    <Content Include="BO_Digits\en\UpdatePassword.aspx" />
+    <Content Include="BO_Digits\en\UserRoles.aspx" />
+    <Content Include="BO_Digits\en\Users.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="License.aspx" />
+    <Content Include="Localization\ar.xml" />
+    <Content Include="Localization\be.xml" />
+    <Content Include="Localization\bg.xml" />
+    <Content Include="Localization\bh.xml" />
+    <Content Include="Localization\ca-ES.xml" />
+    <Content Include="Localization\cs.xml" />
+    <Content Include="Localization\de.xml" />
+    <Content Include="Localization\el-GR.xml" />
+    <Content Include="Localization\en-GB.xml" />
+    <Content Include="Localization\en.xml" />
+    <Content Include="Localization\es.xml" />
+    <Content Include="Localization\eu-ES.xml" />
+    <Content Include="Localization\fa.xml" />
+    <Content Include="Localization\fr.xml" />
+    <Content Include="Localization\gl-ES.xml" />
+    <Content Include="Localization\hr.xml" />
+    <Content Include="Localization\hu.xml" />
+    <Content Include="Localization\id.xml" />
+    <Content Include="Localization\it.xml" />
+    <Content Include="Localization\ja.xml" />
+    <Content Include="Localization\ka.xml" />
+    <Content Include="Localization\ko.xml" />
+    <Content Include="Localization\ku.xml" />
+    <Content Include="Localization\lt.xml" />
+    <Content Include="Localization\nb-NO.xml" />
+    <Content Include="Localization\nl.xml" />
+    <Content Include="Localization\pl.xml" />
+    <Content Include="Localization\pt-BR.xml" />
+    <Content Include="Localization\pt.xml" />
+    <Content Include="Localization\ro.xml" />
+    <Content Include="Localization\ru.xml" />
+    <Content Include="Localization\sk.xml" />
+    <Content Include="Localization\sr.xml" />
+    <Content Include="Localization\sv.xml" />
+    <Content Include="Localization\tr.xml" />
+    <Content Include="Localization\uk.xml" />
+    <Content Include="Localization\vi.xml" />
+    <Content Include="Localization\zh-CHS.xml" />
+    <Content Include="Localization\zh-CHT.xml" />
+    <Content Include="Login.aspx" />
+    <Content Include="Password.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="UserControls\BreadCrumb.ascx" />
+    <Content Include="UserControls\LeftNavigation.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivateAccounts.aspx.cs">
+      <DependentUpon>ActivateAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivateAccounts.aspx.designer.cs">
+      <DependentUpon>ActivateAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\LicenseController.cs" />
+    <Compile Include="BO_Digits\ar\ar_master.Master.cs">
+      <DependentUpon>ar_master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\ar\ar_master.Master.designer.cs">
+      <DependentUpon>ar_master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditCustomer.aspx.cs">
+      <DependentUpon>AddEditCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditCustomer.aspx.designer.cs">
+      <DependentUpon>AddEditCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditLicenseManagement.aspx.cs">
+      <DependentUpon>AddEditLicenseManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditLicenseManagement.aspx.designer.cs">
+      <DependentUpon>AddEditLicenseManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditLicenseTypes.aspx.cs">
+      <DependentUpon>AddEditLicenseTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditLicenseTypes.aspx.designer.cs">
+      <DependentUpon>AddEditLicenseTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditPlatforms.aspx.cs">
+      <DependentUpon>AddEditPlatforms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditPlatforms.aspx.designer.cs">
+      <DependentUpon>AddEditPlatforms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditProjects.aspx.cs">
+      <DependentUpon>AddEditProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditProjects.aspx.designer.cs">
+      <DependentUpon>AddEditProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditUser.aspx.cs">
+      <DependentUpon>AddEditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\AddEditUser.aspx.designer.cs">
+      <DependentUpon>AddEditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\en_master.Master.cs">
+      <DependentUpon>en_master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\en_master.Master.designer.cs">
+      <DependentUpon>en_master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\LicenseManagement.aspx.cs">
+      <DependentUpon>LicenseManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\LicenseManagement.aspx.designer.cs">
+      <DependentUpon>LicenseManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\LicenseManagementDetail.aspx.cs">
+      <DependentUpon>LicenseManagementDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\LicenseManagementDetail.aspx.designer.cs">
+      <DependentUpon>LicenseManagementDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListCustomer.aspx.cs">
+      <DependentUpon>ListCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListCustomer.aspx.designer.cs">
+      <DependentUpon>ListCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListLicenseTypes.aspx.cs">
+      <DependentUpon>ListLicenseTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListLicenseTypes.aspx.designer.cs">
+      <DependentUpon>ListLicenseTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListPlatforms.aspx.cs">
+      <DependentUpon>ListPlatforms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListPlatforms.aspx.designer.cs">
+      <DependentUpon>ListPlatforms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListProjectCustomers.aspx.cs">
+      <DependentUpon>ListProjectCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListProjectCustomers.aspx.designer.cs">
+      <DependentUpon>ListProjectCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListProjects.aspx.cs">
+      <DependentUpon>ListProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\ListProjects.aspx.designer.cs">
+      <DependentUpon>ListProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\Security.aspx.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\Security.aspx.designer.cs">
+      <DependentUpon>Security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\UserRoles.aspx.cs">
+      <DependentUpon>UserRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\UserRoles.aspx.designer.cs">
+      <DependentUpon>UserRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\en\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BO_Digits\en\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BO_Digits\General.cs" />
+    <Compile Include="BO_Digits\GeneralFunctions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="License.aspx.cs">
+      <DependentUpon>License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="License.aspx.designer.cs">
+      <DependentUpon>License.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UICommoncs.cs" />
+    <Compile Include="UserControls\BreadCrumb.ascx.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BreadCrumb.ascx.designer.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigation.ascx.cs">
+      <DependentUpon>LeftNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigation.ascx.designer.cs">
+      <DependentUpon>LeftNavigation.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BO_Digits\ar\ar_master.Master" />
+    <Content Include="BO_Digits\en\en_master.Master" />
+    <Content Include="App_Data\RadUploadTemp\RadUploadTestFile" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BO_Digits\en\LogFile\" />
+    <Folder Include="LogFile\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60648</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

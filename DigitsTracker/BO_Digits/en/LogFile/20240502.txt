@@ -1,0 +1,1 @@
+<Values><rcs_rot_ID>2</rcs_rot_ID><rcs_cus_ID>41</rcs_cus_ID><Paymodes>OP</Paymodes></Values><Values><rcs_rot_ID>3</rcs_rot_ID><rcs_cus_ID>41</rcs_cus_ID><Paymodes>OP</Paymodes></Values><Values><rcs_rot_ID>2</rcs_rot_ID><rcs_cus_ID>49</rcs_cus_ID><Paymodes>OP</Paymodes></Values><Values><rcs_rot_ID>3</rcs_rot_ID><rcs_cus_ID>49</rcs_cus_ID><Paymodes>OP</Paymodes></Values></r>

@@ -1,0 +1,29 @@
+02-Aug-2024 17.45.35-GetLicenseDetails STARTED
+02-Aug-2024 17.45.35-====================
+02-Aug-2024 17.58.25-GetLicenseDetails STARTED
+02-Aug-2024 17.58.25-====================
+02-Aug-2024 17.58.27-GetLicenseDetails Exception - Object reference not set to an instance of an object.
+02-Aug-2024 17.58.27-GetLicenseDetails ENDED
+02-Aug-2024 17.58.27-==================
+02-Aug-2024 18.00.57-GetLicenseDetails STARTED
+02-Aug-2024 18.00.57-====================
+02-Aug-2024 18.00.58-GetLicenseDetails Exception - Object reference not set to an instance of an object.
+02-Aug-2024 18.00.58-GetLicenseDetails ENDED
+02-Aug-2024 18.00.58-==================
+02-Aug-2024 18.01.02-GetLicenseDetails STARTED
+02-Aug-2024 18.01.02-====================
+02-Aug-2024 19.15.32-GetLicenseDetails Exception - Object reference not set to an instance of an object.
+02-Aug-2024 19.15.32-GetLicenseDetails ENDED
+02-Aug-2024 19.15.32-==================
+02-Aug-2024 19.15.38-GetLicenseDetails STARTED
+02-Aug-2024 19.15.38-====================
+02-Aug-2024 19.15.45-GetLicenseDetails Exception - Object reference not set to an instance of an object.
+02-Aug-2024 19.15.45-GetLicenseDetails ENDED
+02-Aug-2024 19.15.45-==================
+02-Aug-2024 19.15.48-GetLicenseDetails STARTED
+02-Aug-2024 19.15.48-====================
+02-Aug-2024 19.21.12-GetLicenseDetails STARTED
+02-Aug-2024 19.21.12-====================
+02-Aug-2024 21.30.28-GetLicenseDetails STARTED
+02-Aug-2024 21.30.28-====================
+02-Aug-2024 21.30.28-GetLicenseDetails LicenseKey - NL5wbGFIfqH6ArDiIoeiR4h/0pleaRZ1c5M+YJ3AhcQ=

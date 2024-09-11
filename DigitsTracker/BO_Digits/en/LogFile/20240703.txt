@@ -1,0 +1,27 @@
+2024-07-03 2.54.45 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.54.48 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 2.54.49 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.57.22 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.57.23 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 2.57.23 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.57.45 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.57.46 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 2.57.46 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 2.57.46 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 2.57.47 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 2.57.51 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 2.57.52 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 2.57.52 PM: General Functions  :- sp_UserError : Invalid object name 'tb_EmployeePlatformMapping'. - 
+2024-07-03 3.02.02 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 3.02.14 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 3.02.20 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 3.02.23 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 3.02.23 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 3.02.23 PM: General Functions  :- sp_MastersError : Could not find stored procedure 'sp_Masters'. - 
+2024-07-03 3.02.28 PM: AddEditUser.aspx Page_Load() :- Error : An error occurred while executing the command definition. See the inner exception for details. - Invalid column name 'MobileNumber'.
+Invalid column name 'cus_ID'.
+2024-07-03 3.02.28 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 8.53.54 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 8.54.47 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 8.56.07 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+2024-07-03 9.09.27 PM: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 

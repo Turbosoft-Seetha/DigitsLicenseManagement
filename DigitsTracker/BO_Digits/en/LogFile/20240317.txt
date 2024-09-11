@@ -1,0 +1,253 @@
+17-03-2024 09:05:40: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 09:06:03: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 09:06:03: session  :- Error :  1 
+17-03-2024 09:06:03: session  :- Error :  2 
+17-03-2024 09:06:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 09:10:15: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:10:26: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 09:10:26: session  :- Error :  1 
+17-03-2024 09:10:26: session  :- Error :  2 
+17-03-2024 09:10:41: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:11:03: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 09:11:08: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 09:11:08: session  :- Error :  1 
+17-03-2024 09:11:08: session  :- Error :  2 
+17-03-2024 09:11:13: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:11:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 09:11:14: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:11:22: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:11:31: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:18:11: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:18:14: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 09:19:07: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 13:04:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:04:19: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 13:04:19: session  :- Error :  1 
+17-03-2024 13:04:19: session  :- Error :  2 
+17-03-2024 13:12:41: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 13:12:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:12:42: General Functions  :- sp_TransactionsError : Incorrect syntax near 'NULLGROUP'. - 
+17-03-2024 13:13:58: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 13:13:58: session  :- Error :  1 
+17-03-2024 13:13:58: session  :- Error :  2 
+17-03-2024 13:14:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:17:33: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 13:17:33: session  :- Error :  1 
+17-03-2024 13:17:33: session  :- Error :  2 
+17-03-2024 13:17:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:19:20: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 13:19:20: session  :- Error :  1 
+17-03-2024 13:19:20: session  :- Error :  2 
+17-03-2024 13:19:23: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:19:23: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:19:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:19:25: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:19:25: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:20:31: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:20:34: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:20:34: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:23:57: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 13:23:57: session  :- Error :  1 
+17-03-2024 13:23:57: session  :- Error :  2 
+17-03-2024 13:24:03: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:24:03: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:24:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 13:24:06: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 13:24:06: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:35:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:35:41: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:35:41: session  :- Error :  1 
+17-03-2024 16:35:41: session  :- Error :  2 
+17-03-2024 16:35:46: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:36:11: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:36:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:36:13: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:36:13: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:37:21: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:37:21: session  :- Error :  1 
+17-03-2024 16:37:21: session  :- Error :  2 
+17-03-2024 16:38:12: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:38:12: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:38:12: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:38:14: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:38:14: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:38:39: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:38:39: session  :- Error :  1 
+17-03-2024 16:38:39: session  :- Error :  2 
+17-03-2024 16:38:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:38:59: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:38:59: session  :- Error :  1 
+17-03-2024 16:38:59: session  :- Error :  2 
+17-03-2024 16:39:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:39:58: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:39:58: session  :- Error :  1 
+17-03-2024 16:39:58: session  :- Error :  2 
+17-03-2024 16:40:04: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:42:21: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:42:21: session  :- Error :  1 
+17-03-2024 16:42:21: session  :- Error :  2 
+17-03-2024 16:42:27: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:44:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:44:41: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:44:41: session  :- Error :  1 
+17-03-2024 16:44:41: session  :- Error :  2 
+17-03-2024 16:44:47: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:46:12: session  :- Error :  3 
+17-03-2024 16:46:12: session  :- Error :  2 
+17-03-2024 16:46:13: session  :- Error :  4 
+17-03-2024 16:46:21: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:46:21: session  :- Error :  1 
+17-03-2024 16:46:21: session  :- Error :  2 
+17-03-2024 16:46:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:48:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:48:56: AddEditTracker.aspx Status() :- Error : Selection out of range
+Parameter name: value - 
+17-03-2024 16:48:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:49:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:49:12: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:49:12: session  :- Error :  1 
+17-03-2024 16:49:12: session  :- Error :  2 
+17-03-2024 16:58:05: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:58:05: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:58:06: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:58:07: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:58:08: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 16:59:32: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:59:32: session  :- Error :  1 
+17-03-2024 16:59:32: session  :- Error :  2 
+17-03-2024 16:59:50: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 16:59:55: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 16:59:55: session  :- Error :  1 
+17-03-2024 16:59:55: session  :- Error :  2 
+17-03-2024 17:00:16: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:02:49: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:03:26: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:03:26: session  :- Error :  1 
+17-03-2024 17:03:26: session  :- Error :  2 
+17-03-2024 17:04:56: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:04:57: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:04:57: session  :- Error :  1 
+17-03-2024 17:04:57: session  :- Error :  2 
+17-03-2024 17:05:02: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:06:52: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:06:52: session  :- Error :  1 
+17-03-2024 17:06:52: session  :- Error :  2 
+17-03-2024 17:06:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:09:48: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:09:48: session  :- Error :  1 
+17-03-2024 17:09:48: session  :- Error :  2 
+17-03-2024 17:10:25: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:14:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:14:29: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:14:29: session  :- Error :  1 
+17-03-2024 17:14:29: session  :- Error :  2 
+17-03-2024 17:15:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:30:20: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:30:26: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:30:29: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:30:29: session  :- Error :  1 
+17-03-2024 17:30:29: session  :- Error :  2 
+17-03-2024 17:30:34: ListTracker.aspx Resource() :- Error : Object reference not set to an instance of an object. - 
+17-03-2024 17:31:03: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 17:31:10: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 17:31:10: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:31:17: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 17:31:19: General Functions  :- sp_TransactionsError : Incorrect syntax near ','. - 
+17-03-2024 17:32:38: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:32:38: session  :- Error :  1 
+17-03-2024 17:32:38: session  :- Error :  2 
+17-03-2024 17:32:54: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 17:32:58: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 17:32:58: session  :- Error :  1 
+17-03-2024 17:32:58: session  :- Error :  2 
+17-03-2024 17:33:07: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:02:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:03:04: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:03:04: session  :- Error :  1 
+17-03-2024 18:03:04: session  :- Error :  2 
+17-03-2024 18:03:13: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:09:10: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:09:10: session  :- Error :  1 
+17-03-2024 18:11:35: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:11:50: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:11:50: session  :- Error :  1 
+17-03-2024 18:11:50: session  :- Error :  2 
+17-03-2024 18:11:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:12:33: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:12:33: session  :- Error :  1 
+17-03-2024 18:12:33: session  :- Error :  2 
+17-03-2024 18:12:42: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:27:27: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:27:27: session  :- Error :  1 
+17-03-2024 18:27:27: session  :- Error :  2 
+17-03-2024 18:30:11: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:36:47: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:36:47: session  :- Error :  1 
+17-03-2024 18:36:47: session  :- Error :  2 
+17-03-2024 18:37:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:37:41: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:37:41: session  :- Error :  1 
+17-03-2024 18:37:41: session  :- Error :  2 
+17-03-2024 18:37:53: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:45:41: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:45:41: session  :- Error :  1 
+17-03-2024 18:45:41: session  :- Error :  2 
+17-03-2024 18:45:45: General Functions  :- sp_TransactionsError : Invalid column name 'trk_AssignedEmp_ID'. - 
+17-03-2024 18:45:46: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:45:46: General Functions  :- sp_TransactionsError : Invalid column name 'trk_AssignedEmp_ID'. - 
+17-03-2024 18:47:08: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:47:08: session  :- Error :  1 
+17-03-2024 18:47:08: session  :- Error :  2 
+17-03-2024 18:47:12: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:52:36: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:53:14: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:53:14: session  :- Error :  1 
+17-03-2024 18:53:14: session  :- Error :  2 
+17-03-2024 18:53:21: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:54:15: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:54:29: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:54:29: session  :- Error :  1 
+17-03-2024 18:54:29: session  :- Error :  2 
+17-03-2024 18:54:32: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:55:34: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:56:18: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:56:18: session  :- Error :  1 
+17-03-2024 18:56:18: session  :- Error :  2 
+17-03-2024 18:56:23: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 18:59:56: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 18:59:56: session  :- Error :  1 
+17-03-2024 18:59:56: session  :- Error :  2 
+17-03-2024 18:59:57: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:04:38: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:05:31: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:05:31: session  :- Error :  1 
+17-03-2024 19:05:31: session  :- Error :  2 
+17-03-2024 19:05:33: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:05:53: General Functions  :- sp_TransactionsError : Conversion failed when converting the nvarchar value '&nbsp;' to data type int. - 
+17-03-2024 19:18:02: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:18:02: session  :- Error :  1 
+17-03-2024 19:18:02: session  :- Error :  2 
+17-03-2024 19:18:05: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:20:30: session  :- Error :  3 
+17-03-2024 19:20:30: session  :- Error :  2 
+17-03-2024 19:20:31: session  :- Error :  4 
+17-03-2024 19:20:43: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:20:53: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:20:53: session  :- Error :  1 
+17-03-2024 19:20:53: session  :- Error :  2 
+17-03-2024 19:20:55: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:33:37: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:33:37: session  :- Error :  1 
+17-03-2024 19:33:37: session  :- Error :  2 
+17-03-2024 19:33:41: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:34:07: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:34:07: session  :- Error :  1 
+17-03-2024 19:34:07: session  :- Error :  2 
+17-03-2024 19:34:09: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:35:45: session  :- Error :  ------------------------- Starts pageload------------
+17-03-2024 19:35:45: session  :- Error :  1 
+17-03-2024 19:35:45: session  :- Error :  2 
+17-03-2024 19:35:47: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:43:59: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:44:37: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
+17-03-2024 19:44:58: General Functions  :- sp_LeftNavigationError : Invalid object name 'tb_Language'. - 
