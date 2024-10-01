@@ -119,7 +119,7 @@ namespace DigitsTracker.API
                                 odDetail.ResponseMessage = "Proceed";
                             }
                         }
-                        if (Platform == "INV")
+                        else if (Platform == "INV")
                         {
                             string InvLimit = listItems[0].InvLimit;
                             int InvUserBal = Int32.Parse(InvLimit.ToString()) - Int32.Parse(InventoryUserCount.ToString());
@@ -139,7 +139,7 @@ namespace DigitsTracker.API
                                 odDetail.ResponseMessage = "Proceed";
                             }
                         }
-                        if (Platform == "BO")
+                        else if (Platform == "BO")
                         {
                             string BOLimit = listItems[0].BOLimit;
                             int BOUserBal = Int32.Parse(BOLimit.ToString()) - Int32.Parse(BackOfficeUserCount.ToString());
@@ -159,7 +159,7 @@ namespace DigitsTracker.API
                                 odDetail.ResponseMessage = "Proceed";
                             }
                         }
-                        if (Platform == "CC")
+                        else if (Platform == "CC")
                         {
                             string CusConnectLimit = listItems[0].CusConnectLimit;
                             int CCUserBal = Int32.Parse(CusConnectLimit.ToString()) - Int32.Parse(CustomerConnectUserCount.ToString());
@@ -178,6 +178,10 @@ namespace DigitsTracker.API
                             {
                                 odDetail.ResponseMessage = "Proceed";
                             }
+                        }
+                        else
+                        {
+                            odDetail.ResponseMessage = "Proceed";
                         }
                     }
 
