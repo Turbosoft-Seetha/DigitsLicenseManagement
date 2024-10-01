@@ -1,10 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DigitsLicenseManagement;
+using Microsoft.AspNetCore.Mvc;
 using MVC_API.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.IO;
+using System.Net;
+using System.Text;
 using System.Web.Http;
+using System.Web.UI;
 using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
 using RouteAttribute = System.Web.Http.RouteAttribute;
 
@@ -28,8 +36,21 @@ namespace DigitsTracker.API
             try
             {
                 string LicenseKey = inputParams.LicenseKey == null ? "0" : inputParams.LicenseKey;
+                string RouteCount = inputParams.RouteCount == null ? "0" : inputParams.RouteCount;
+                string InventoryUserCount = inputParams.InventoryUserCount == null ? "0" : inputParams.InventoryUserCount;
+                string BackOfficeUserCount = inputParams.BackOfficeUserCount == null ? "0" : inputParams.BackOfficeUserCount;
+                string CustomerConnectUserCount = inputParams.CustomerConnectUserCount == null ? "0" : inputParams.CustomerConnectUserCount;
+                string SFA_AppUserCount = inputParams.SFA_AppUserCount == null ? "0" : inputParams.SFA_AppUserCount;
+                string Platform = inputParams.Platform == null ? "0" : inputParams.Platform;
+                string IsStatusChange = inputParams.IsStatusChange == null ? "0" : inputParams.IsStatusChange;
 
-                dm.TraceService("GetLicenseDetails LicenseKey - " + inputParams.LicenseKey);
+                dm.TraceService("LicenseKey - " + inputParams.LicenseKey);
+                dm.TraceService("RouteCount - " + inputParams.RouteCount);
+                dm.TraceService("InventoryUserCount - " + inputParams.InventoryUserCount);
+                dm.TraceService("BackOfficeUserCount - " + inputParams.BackOfficeUserCount);
+                dm.TraceService("CustomerConnectUserCount - " + inputParams.CustomerConnectUserCount);
+                dm.TraceService("SFA_AppUserCount - " + inputParams.SFA_AppUserCount);
+
 
                 DataTable dt = dm.loadList("SelLicenseDetail", "sp_LicenseAPI", LicenseKey.ToString());
                 List<LicenseOut> listItems = new List<LicenseOut>();
@@ -66,8 +87,98 @@ namespace DigitsTracker.API
                             CusConnectLimit = dr["CusConnectLimit"].ToString(),
                             InvLimit = dr["InvLimit"].ToString(),
                             BOLimit = dr["BOLimit"].ToString(),
-                            
+
                         });
+                    }
+
+                    DateTime ExpiryDate = DateTime.Parse(listItems[0].ExpiryDate);
+
+                    if (ExpiryDate < DateTime.Now) // Check if the expiry date is in the past
+                    {
+                        odDetail.ResponseMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                    }
+                    else
+                    {
+                        if (Platform == "USER")
+                        {
+                            string UserLimit = listItems[0].UserLimit;
+                            int AppUserBal = Int32.Parse(UserLimit.ToString()) - Int32.Parse(RouteCount.ToString());
+                            if (AppUserBal <= 0)
+                            {
+                                if (IsStatusChange == "Y")
+                                {
+                                    odDetail.ResponseMessage = "You cannot make this Route as active due to license limitations.";
+                                }
+                                else
+                                {
+                                    odDetail.ResponseMessage = "Route Limit Exceeded, Kindly contact DigiTS team to increase the route limit.";
+                                }
+                            }
+                            else
+                            {
+                                odDetail.ResponseMessage = "Proceed";
+                            }
+                        }
+                        if (Platform == "INV")
+                        {
+                            string InvLimit = listItems[0].InvLimit;
+                            int InvUserBal = Int32.Parse(InvLimit.ToString()) - Int32.Parse(InventoryUserCount.ToString());
+                            if (InvUserBal <= 0)
+                            {
+                                if (IsStatusChange == "Y")
+                                {
+                                    odDetail.ResponseMessage = "You cannot make this user as active due to license limitations.";
+                                }
+                                else
+                                {
+                                    odDetail.ResponseMessage = "Inventory User Limit Exceeded, Kindly contact DigiTS team to increase the user limit.";
+                                }
+                            }
+                            else
+                            {
+                                odDetail.ResponseMessage = "Proceed";
+                            }
+                        }
+                        if (Platform == "BO")
+                        {
+                            string BOLimit = listItems[0].BOLimit;
+                            int BOUserBal = Int32.Parse(BOLimit.ToString()) - Int32.Parse(BackOfficeUserCount.ToString());
+                            if (BOUserBal <= 0)
+                            {
+                                if (IsStatusChange == "Y")
+                                {
+                                    odDetail.ResponseMessage = "You cannot make this user as active due to license limitations.";
+                                }
+                                else
+                                {
+                                    odDetail.ResponseMessage = "Backend User Limit Exceeded, Kindly contact DigiTS team to increase the user limit.";
+                                }
+                            }
+                            else
+                            {
+                                odDetail.ResponseMessage = "Proceed";
+                            }
+                        }
+                        if (Platform == "CC")
+                        {
+                            string CusConnectLimit = listItems[0].CusConnectLimit;
+                            int CCUserBal = Int32.Parse(CusConnectLimit.ToString()) - Int32.Parse(CustomerConnectUserCount.ToString());
+                            if (CCUserBal <= 0)
+                            {
+                                if (IsStatusChange == "Y")
+                                {
+                                    odDetail.ResponseMessage = "You cannot make this user as active due to license limitations.";
+                                }
+                                else
+                                {
+                                    odDetail.ResponseMessage = "Customer Connect User Limit Exceeded, Kindly contact DigiTS team to increase the user limit.";
+                                }
+                            }
+                            else
+                            {
+                                odDetail.ResponseMessage = "Proceed";
+                            }
+                        }
                     }
 
                     odDetail.LicenseData = listItems;
@@ -107,6 +218,7 @@ namespace DigitsTracker.API
 
                     odDetail.Res = "500";
                     odDetail.Message = "Failure";
+                    odDetail.ResponseMessage = "Something went wrong please try again later.";
                     odDetail.LicenseData = listItems;
 
                     var result = new { result = new List<ResponseOut> { odDetail } };
@@ -130,12 +242,21 @@ namespace DigitsTracker.API
         {
             public string Res { get; set; }
             public string Message { get; set; }
+            public string ResponseMessage { get; set; }
+
             public List<LicenseOut> LicenseData { get; set; }
         }
 
         public class LicenseIn
         {
             public string LicenseKey { get; set; }
+            public string RouteCount { get; set; }
+            public string InventoryUserCount { get; set; }
+            public string BackOfficeUserCount { get; set; }
+            public string CustomerConnectUserCount { get; set; }
+            public string SFA_AppUserCount { get; set; }
+            public string Platform { get; set; }
+            public string IsStatusChange { get; set; }
         }
 
         public class LicenseOut
@@ -164,5 +285,108 @@ namespace DigitsTracker.API
             public string InvLimit { get; set; }
             public string BOLimit { get; set; }
         }
+
+
+        // Get the Projects consumed License counts , and update that data into License db starts here
+
+        [HttpPost]
+        [Route("API/License/UpdateLicenseInfo")]
+        [Consumes("multipart/form-data")]
+        public IHttpActionResult UpdateLicenseInfo([FromForm] UpdateLicenseIn inputParams)
+        {
+            dm.TraceService("UpdateLicenseInfo STARTED");
+            dm.TraceService("====================");
+
+
+            try
+            {
+                string LicenseKey = inputParams.LicenseKey == null ? "0" : inputParams.LicenseKey;
+                string RouteCount = inputParams.RouteCount == null ? "0" : inputParams.RouteCount;
+                string InventoryUserCount = inputParams.InventoryUserCount == null ? "0" : inputParams.InventoryUserCount;
+                string BackOfficeUserCount = inputParams.BackOfficeUserCount == null ? "0" : inputParams.BackOfficeUserCount;
+                string CustomerConnectUserCount = inputParams.CustomerConnectUserCount == null ? "0" : inputParams.CustomerConnectUserCount;
+                string SFA_AppUserCount = inputParams.SFA_AppUserCount == null ? "0" : inputParams.SFA_AppUserCount;
+
+                dm.TraceService("LicenseKey - " + inputParams.LicenseKey);
+                dm.TraceService("RouteCount - " + inputParams.RouteCount);
+                dm.TraceService("InventoryUserCount - " + inputParams.InventoryUserCount);
+                dm.TraceService("BackOfficeUserCount - " + inputParams.BackOfficeUserCount);
+                dm.TraceService("CustomerConnectUserCount - " + inputParams.CustomerConnectUserCount);
+                dm.TraceService("SFA_AppUserCount - " + inputParams.SFA_AppUserCount);
+
+                string[] arr = { RouteCount, InventoryUserCount, BackOfficeUserCount, CustomerConnectUserCount, SFA_AppUserCount };
+                DataTable dt = dm.loadList("UpdateLicenseDetail", "sp_LicenseAPI", LicenseKey.ToString(), arr);
+
+                List<UpdateLicenseOut> listItems = new List<UpdateLicenseOut>();
+
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        listItems.Add(new UpdateLicenseOut
+                        {
+                            Res = dr["Res"].ToString(),
+                            Title = dr["Title"].ToString(),
+                            Descr = dr["Descr"].ToString(),
+
+
+                        });
+                    }
+
+                    var result = new
+                    {
+                        result = listItems
+                    };
+
+                    return Ok(result);
+                }
+                else
+                {
+                    listItems.Add(new UpdateLicenseOut
+                    {
+                        Res = "500",
+                        Title = "Failure",
+                        Descr = "datatable returns null or nodata",
+                    });
+
+                    var result = new
+                    {
+                        result = listItems
+                    };
+
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                dm.TraceService("UpdateLicenseInfo Exception - " + ex.Message.ToString());
+                return InternalServerError(ex);
+            }
+            finally
+            {
+                dm.TraceService("UpdateLicenseInfo ENDED");
+                dm.TraceService("==================");
+            }
+        }
+
+        public class UpdateLicenseIn
+        {
+            public string LicenseKey { get; set; }
+            public string RouteCount { get; set; }
+            public string InventoryUserCount { get; set; }
+            public string BackOfficeUserCount { get; set; }
+            public string CustomerConnectUserCount { get; set; }
+            public string SFA_AppUserCount { get; set; }
+
+        }
+        public class UpdateLicenseOut
+        {
+            public string Res { get; set; }
+            public string Title { get; set; }
+            public string Descr { get; set; }
+
+        }
+
+
     }
 }

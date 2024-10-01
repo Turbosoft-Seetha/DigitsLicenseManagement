@@ -49,7 +49,9 @@ namespace DigitsLicenseManagement.BO_Digits.en
                 Label lblContactNumber = (Label)rp.FindControl("lblContactNumber");
                 Label lblCusEmail = (Label)rp.FindControl("lblCusEmail");
                 Label lblModifiedDate = (Label)rp.FindControl("lblModifiedDate");
+                Label lblAPILastAPIUpadted = (Label)rp.FindControl("lblAPILastAPIUpadted");
 
+                rp.Text= "License Number : " + lstDatas.Rows[0]["pke_LicenseNumber"].ToString();
                 lblLicenseKey.Text = lstDatas.Rows[0]["pke_LicenseKey"].ToString();
                 lblProject.Text = lstDatas.Rows[0]["prj_Name"].ToString();
                 lblProjectCustomer.Text = lstDatas.Rows[0]["cus_Name"].ToString();
@@ -66,7 +68,8 @@ namespace DigitsLicenseManagement.BO_Digits.en
                 lblContactNumber.Text = lstDatas.Rows[0]["cus_ContactNumber"].ToString();
                 lblCusEmail.Text = lstDatas.Rows[0]["cus_Email"].ToString();
                 lblModifiedDate.Text = lstDatas.Rows[0]["ModifiedDate"].ToString();
-                
+                lblAPILastAPIUpadted.Text = lstDatas.Rows[0]["puc_LastAPIUpdatedTime"].ToString();
+
                 string Status = lblStatus.Text = lstDatas.Rows[0]["Status"].ToString();
 
                 if(Status == "Active")
@@ -105,5 +108,6 @@ namespace DigitsLicenseManagement.BO_Digits.en
         protected void grvRpt_ItemCommand(object sender, Telerik.Web.UI.GridCommandEventArgs e)
         {
         }
+
     }
 }

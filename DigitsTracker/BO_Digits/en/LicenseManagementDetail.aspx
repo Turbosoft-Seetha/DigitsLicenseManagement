@@ -48,12 +48,12 @@
                                         <label class="col-lg-4 col-form-label" style="display: contents;">
                                             <asp:Label ID="lblContactPerson" Font-Bold="true" runat="server"></asp:Label></label>
                                     </div>
-
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="col-lg-2 col-form-label" style="display: contents;">Status:</label>
-                                        <label class="col-lg-4 col-form-label" style="display: contents;">
-                                            <asp:Label ID="lblStatus" Font-Bold="true" runat="server"></asp:Label></label>
-                                    </div>
+                                     <div class="col-lg-12 mb-2">
+                                         <label class="col-lg-2 col-form-label" style="display: contents;">API Last Upadated Time:</label>
+                                         <label class="col-lg-4 col-form-label" style="display: contents;">
+                                            <asp:Label ID="lblAPILastAPIUpadted" Font-Bold="true" runat="server"></asp:Label></label>
+                                     </div>
+                                   
                                 </td>
                                 <td style="width: 30%">
                                     <div class="col-lg-12 mb-2">
@@ -84,6 +84,11 @@
                                         <label class="col-lg-4 col-form-label" style="display: contents;">
                                             <asp:Label ID="lblContactNumber" Font-Bold="true" runat="server"></asp:Label></label>
                                     </div>
+                                     <div class="col-lg-12 mb-2">
+     <label class="col-lg-2 col-form-label" style="display: contents;">Status:</label>
+     <label class="col-lg-4 col-form-label" style="display: contents;">
+         <asp:Label ID="lblStatus" Font-Bold="true" runat="server"></asp:Label></label>
+ </div>
                                 </td>
                                 <td style="width: 30%">
                                     <div class="col-lg-12 mb-2">
@@ -127,57 +132,97 @@
         </telerik:RadPanelBar>
 
         <telerik:RadSkinManager ID="RadSkinManager1" runat="server" Skin="Material" />
-        <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="true"
-            ID="grvRpt" GridLines="None"
-            ShowFooter="True" AllowSorting="True"
-            OnNeedDataSource="grvRpt_NeedDataSource"
-            OnItemCommand="grvRpt_ItemCommand"
-            AllowFilteringByColumn="true"
-            ClientSettings-Resizing-ClipCellContentOnResize="true"
-            EnableAjaxSkinRendering="true"
-            AllowPaging="true" PageSize="10" CellSpacing="0" PagerStyle-AlwaysVisible="true">
-            <ClientSettings>
-                <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true" ScrollHeight="500px"></Scrolling>
-            </ClientSettings>
-            <MasterTableView AutoGenerateColumns="False" FilterItemStyle-Font-Size="XX-Small" CanRetrieveAllData="false"
-                ShowFooter="false" DataKeyNames="ID"
-                EnableHeaderContextMenu="true">
-                <Columns>
 
-                    <telerik:GridBoundColumn DataField="plm_Name" AllowFiltering="true" HeaderStyle-Width="150px"
-                        HeaderStyle-Font-Size="Smaller" HeaderText="Project Platform" FilterControlWidth="100%"
-                        CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
-                        HeaderStyle-Font-Bold="true" UniqueName="plm_Name">
-                    </telerik:GridBoundColumn>
+        <div class="col-lg-12 row">
+            <div class="col-lg-12">
+                <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="true"
+                    ID="grvRpt" GridLines="None"
+                    ShowFooter="True" AllowSorting="True"
+                    OnNeedDataSource="grvRpt_NeedDataSource"
+                    OnItemCommand="grvRpt_ItemCommand"
+                    AllowFilteringByColumn="true"
+                    ClientSettings-Resizing-ClipCellContentOnResize="true"
+                    EnableAjaxSkinRendering="true"
+                    AllowPaging="true" PageSize="10" CellSpacing="0" PagerStyle-AlwaysVisible="true">
+                    <ClientSettings>
+                        <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true" ScrollHeight="300px"></Scrolling>
+                    </ClientSettings>
+                    <MasterTableView AutoGenerateColumns="False" FilterItemStyle-Font-Size="XX-Small" CanRetrieveAllData="false"
+                        ShowFooter="false" DataKeyNames="ID"
+                        EnableHeaderContextMenu="true">
+                        <Columns>
 
-                    <telerik:GridBoundColumn DataField="puc_NoOfUsers" AllowFiltering="true" HeaderStyle-Width="100px"
-                        HeaderStyle-Font-Size="Smaller" HeaderText="No Of Users" FilterControlWidth="100%"
-                        CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
-                        HeaderStyle-Font-Bold="true" UniqueName="puc_NoOfUsers">
-                    </telerik:GridBoundColumn>
+                            <telerik:GridBoundColumn DataField="plm_Name" AllowFiltering="true" HeaderStyle-Width="150px"
+                                HeaderStyle-Font-Size="Smaller" HeaderText="Project Platform" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Font-Bold="true" UniqueName="plm_Name">
+                            </telerik:GridBoundColumn>
+
+                            <telerik:GridBoundColumn DataField="puc_NoOfUsers" AllowFiltering="true" HeaderStyle-Width="100px"
+                                HeaderStyle-Font-Size="Smaller" HeaderText="No Of Users" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Font-Bold="true" UniqueName="puc_NoOfUsers">
+                            </telerik:GridBoundColumn>
+
+                            <telerik:GridBoundColumn DataField="puc_NoOfConsumedUsers" AllowFiltering="true" HeaderStyle-Width="100px"
+                                HeaderStyle-Font-Size="Smaller" HeaderText="No Of Consumed Users" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Font-Bold="true" UniqueName="puc_NoOfConsumedUsers">
+                            </telerik:GridBoundColumn>
 
 
-                    <telerik:GridBoundColumn DataField="CreatedDate" AllowFiltering="true" HeaderStyle-Width="150px"
-                        HeaderStyle-Font-Size="Smaller" HeaderText="CreatedDate" FilterControlWidth="100%"
-                        CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
-                        HeaderStyle-Font-Bold="true" UniqueName="CreatedDate">
-                    </telerik:GridBoundColumn>
+                            <telerik:GridBoundColumn DataField="CreatedDate" AllowFiltering="true" HeaderStyle-Width="150px"
+                                HeaderStyle-Font-Size="Smaller" HeaderText="CreatedDate" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Font-Bold="true" UniqueName="CreatedDate">
+                            </telerik:GridBoundColumn>
 
-                    <telerik:GridBoundColumn DataField="Status" AllowFiltering="true" HeaderStyle-Width="100px"
-                        HeaderStyle-Font-Size="Smaller" HeaderText="Status" FilterControlWidth="100%"
-                        CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
-                        HeaderStyle-Font-Bold="true" UniqueName="Status">
-                    </telerik:GridBoundColumn>
+                            <telerik:GridBoundColumn DataField="Status" AllowFiltering="true" HeaderStyle-Width="100px"
+                                HeaderStyle-Font-Size="Smaller" HeaderText="Status" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Font-Bold="true" UniqueName="Status">
+                            </telerik:GridBoundColumn>
 
-                </Columns>
-            </MasterTableView>
-            <PagerStyle AlwaysVisible="true" />
-            <GroupingSettings CaseSensitive="false" />
-            <ClientSettings AllowDragToGroup="True" EnableRowHoverStyle="true" AllowColumnsReorder="True">
-                <Resizing AllowColumnResize="true"></Resizing>
-                <Selecting AllowRowSelect="True" EnableDragToSelectRows="true"></Selecting>
-            </ClientSettings>
-        </telerik:RadGrid>
+                        </Columns>
+                    </MasterTableView>
+                    <PagerStyle AlwaysVisible="true" />
+                    <GroupingSettings CaseSensitive="false" />
+                    <ClientSettings AllowDragToGroup="True" EnableRowHoverStyle="true" AllowColumnsReorder="True">
+                        <Resizing AllowColumnResize="true"></Resizing>
+                        <Selecting AllowRowSelect="True" EnableDragToSelectRows="true"></Selecting>
+                    </ClientSettings>
+                </telerik:RadGrid>
+            </div>
+            <%--<div class="col-lg-4" style="border-style: groove;    border-width: 2px;">
+               <div class="col-lg-12 p-4">
+                    <div class="col-lg-12 row p-2 mb-2 fw-bold fs-3">
+                        <span> <u> License Consumed User Counts </u></span>
+                    </div>
+                   <div class="col-lg-12 row p-2 mb-2">
+                   <span class="col-lg-8 fs-4 fw-bold"> Route : </span>
+                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblRouteCount" Text="0"> </asp:Label>
+                   </div>
+
+                    <div class="col-lg-12 row p-2 mb-2">
+                   <span class="col-lg-8 fs-4 fw-bold"> Inventory User : </span>
+                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblInvUserCount" Text="0"> </asp:Label>
+                   </div>
+
+                   <div class="col-lg-12 row p-2 mb-2">
+                   <span class="col-lg-8 fs-4 fw-bold"> Backend User : </span>
+                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblBOUserCount" Text="0"> </asp:Label>
+                   </div>
+
+                   <div class="col-lg-12 row p-2 mb-2">
+                   <span class="col-lg-8 fs-4 fw-bold"> Customer Connect User : </span>
+                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblCCUserCount" Text="0"> </asp:Label>
+                   </div>
+
+               </div>
+            </div>--%>
+        </div>
+
+
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="footerScripts" runat="server">
