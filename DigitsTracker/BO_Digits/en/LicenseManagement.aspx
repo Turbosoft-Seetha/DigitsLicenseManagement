@@ -6,6 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Actions" runat="server">
      <telerik:RadAjaxPanel ID="RadAjaxPanel2" runat="server" LoadingPanelID="RadAjaxLoadingPanel1">
         <asp:LinkButton ID="lnkAdd" runat="server" CssClass="btn btn-sm fw-bold btn-primary" Text="Add" OnClick="lnkAdd_Click" CausesValidation="false"></asp:LinkButton>
+        
      </telerik:RadAjaxPanel>
 
                     <telerik:RadAjaxLoadingPanel runat="server" Skin="Sunset" ID="RadAjaxLoadingPanel1" EnableEmbeddedSkins="false"
@@ -15,6 +16,8 @@
                             <img alt="Loading..." src="../assets/media/bg/loader.gif" style="border: 0px;" />
                         </div>
                     </telerik:RadAjaxLoadingPanel>
+    <asp:LinkButton ID="lnkResetGridFilter" runat="server"  CssClass="btn btn-sm fw-bold btn-secondary" Text="Reset Grid" OnClick="lnkResetGridFilter_Click" Visible="false"></asp:LinkButton>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <div class="card-body p-8" style="background-color: white;">

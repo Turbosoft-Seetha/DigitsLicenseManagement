@@ -190,7 +190,7 @@
                 <div class="col-lg-3">
                     <label class="control-label col-lg-12 pt-2 pb-1" style="color: #464646;">No of Users</label>
                     <div class="col-lg-12">
-                        <telerik:RadNumericTextBox RenderMode="Lightweight" ID="txtNoOfUsers" runat="server" Width="100%" Skin="Silk">
+                        <telerik:RadNumericTextBox RenderMode="Lightweight" ID="txtNoOfUsers" runat="server" Width="100%" Skin="Silk" NumberFormat-DecimalDigits="0">
                         </telerik:RadNumericTextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic" ErrorMessage="No Of Users is mandatory"
                             ForeColor="Red" ControlToValidate="txtNoOfUsers" ValidationGroup="form"></asp:RequiredFieldValidator>

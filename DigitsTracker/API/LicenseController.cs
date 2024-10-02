@@ -92,10 +92,15 @@ namespace DigitsTracker.API
                     }
 
                     DateTime ExpiryDate = DateTime.Parse(listItems[0].ExpiryDate);
+                    string Status = listItems[0].Status;
 
                     if (ExpiryDate < DateTime.Now) // Check if the expiry date is in the past
                     {
                         odDetail.ResponseMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                    }
+                    else if (Status == "Cancelled")
+                    {
+                        odDetail.ResponseMessage = "Your license has Cancelled. Please contact the DigiTS team to activate your license.";
                     }
                     else
                     {

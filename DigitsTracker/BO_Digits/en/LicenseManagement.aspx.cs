@@ -16,8 +16,207 @@ namespace DigitsLicenseManagement.BO_Digits.en
         {
             if (!Page.IsPostBack)
             {
+                try
+                {
+                    GetGridSession(grvRpt, "License");
+
+                    grvRpt.Rebind();
+                }
+
+                catch (Exception ex)
+                {
+                    String innerMessage = (ex.InnerException != null) ? ex.InnerException.Message : "";
+                    ObjclsFrms.LogMessageToFile(UICommon.GetLogFileName(), "LicenseManagement.aspx PageLoad()", "Error : " + ex.Message.ToString() + " - " + innerMessage);
+
+                }
+            }
+        }
+        public void SetGridSession(RadGrid grd, string SessionPrefix)
+
+        {
+
+            try
+
+            {
+
+                foreach (GridColumn column in grd.MasterTableView.Columns)
+
+                {
+
+                    if (column is GridBoundColumn boundColumn)
+
+                    {
+
+                        string columnName = boundColumn.UniqueName;
+
+                        string filterValue = column.CurrentFilterValue;
+
+                        Session[SessionPrefix + columnName] = filterValue;
+
+                    }
+
+                }
 
             }
+
+            catch (Exception ex)
+
+            {
+
+
+
+            }
+
+
+
+        }
+        public void GetGridSession(RadGrid grd, string SessionPrefix)
+
+        {
+
+            try
+
+            {
+
+                string filterExpression = string.Empty;
+
+                foreach (GridColumn column in grd.MasterTableView.Columns)
+
+                {
+
+                    if (column is GridBoundColumn boundColumn)
+
+                    {
+
+                        string columnName = boundColumn.UniqueName;
+
+                        if (Session[SessionPrefix + columnName] != null)
+
+                        {
+
+                            string filterValue = Session[SessionPrefix + columnName].ToString();
+
+
+
+                            if (filterValue != "")
+                            {
+
+                                column.CurrentFilterValue = filterValue;
+
+
+
+                                if (!string.IsNullOrEmpty(filterExpression))
+
+                                {
+
+                                    filterExpression += " AND ";
+
+                                }
+
+                                filterExpression += string.Format("{0} LIKE '%{1}%'", column.UniqueName, column.CurrentFilterValue);
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                if (filterExpression != string.Empty)
+
+                {
+
+                    grvRpt.MasterTableView.FilterExpression = filterExpression;
+
+                }
+
+
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+
+
+            }
+
+        }
+        public void ResetGridSession(RadGrid grd, string SessionPrefix)
+
+        {
+
+            try
+
+            {
+
+                string filterExpression = string.Empty;
+
+                foreach (GridColumn column in grd.MasterTableView.Columns)
+
+                {
+
+                    if (column is GridBoundColumn boundColumn)
+
+                    {
+
+                        string columnName = boundColumn.UniqueName;
+
+                        if (Session[SessionPrefix + columnName] != null)
+
+                        {
+
+                            string filterValue = Session[SessionPrefix + columnName].ToString();
+
+
+
+                            if (filterValue != "")
+                            {
+
+                                column.CurrentFilterValue = "";
+
+                                Session[SessionPrefix + columnName] = null;
+
+                                if (!string.IsNullOrEmpty(filterExpression))
+
+                                {
+
+                                    filterExpression += " AND ";
+
+                                }
+
+                                filterExpression += string.Format("{0} LIKE '%{1}%'", column.UniqueName, column.CurrentFilterValue);
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                if (filterExpression != string.Empty)
+
+                {
+
+                    grvRpt.MasterTableView.FilterExpression = filterExpression;
+
+                }
+
+
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+
+
+            }
+
         }
         public void LoadList()
         {
@@ -43,6 +242,19 @@ namespace DigitsLicenseManagement.BO_Digits.en
 
         protected void grvRpt_ItemCommand(object sender, GridCommandEventArgs e)
         {
+            try
+            {
+                RadGrid grd = (RadGrid)sender;
+
+                SetGridSession(grd, "License");
+            }
+            catch (Exception ex)
+            {
+
+                String innerMessage = (ex.InnerException != null) ? ex.InnerException.Message : "";
+                ObjclsFrms.LogMessageToFile(UICommon.GetLogFileName(), "LicenseManagement.aspx --- grvRpt_ItemCommand()", "Error : " + ex.Message.ToString() + " - " + innerMessage);
+            }
+
             if (e.CommandName.Equals("Detail"))
             {
                 GridDataItem dataItem = e.Item as GridDataItem;
@@ -93,6 +305,12 @@ namespace DigitsLicenseManagement.BO_Digits.en
                 }
 
             }
+        }
+
+        protected void lnkResetGridFilter_Click(object sender, EventArgs e)
+        {
+            ResetGridSession(grvRpt, "License");
+            grvRpt.Rebind();
         }
     }
 }
