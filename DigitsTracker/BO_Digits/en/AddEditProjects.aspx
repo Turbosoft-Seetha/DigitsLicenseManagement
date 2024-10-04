@@ -4,24 +4,24 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="PageHeader" runat="server">
     <script type="text/javascript">
-    function Confim() {
-        $('#modalConfirm').modal('show');
-    }
-    function Succcess(a) {
-        $('#modalConfirm').modal('hide');
-        $('#kt_modal_1_4').modal('show');
+        function Confim() {
+            $('#modalConfirm').modal('show');
+        }
+        function Succcess(a) {
+            $('#modalConfirm').modal('hide');
+            $('#kt_modal_1_4').modal('show');
 
-        $('#success').text(a);
-    }
-    function Failure() {
-        $('#modalConfirm').modal('hide');
-        $('#kt_modal_1_5').modal('show');
-    }
-    function failedModal(res) {
-        $('#modalConfirm').modal('hide');
-        $('#kt_modal_1_2').modal('show');
-        $('#failres').text(res);
-    }
+            $('#success').text(a);
+        }
+        function Failure() {
+            $('#modalConfirm').modal('hide');
+            $('#kt_modal_1_5').modal('show');
+        }
+        function failedModal(res) {
+            $('#modalConfirm').modal('hide');
+            $('#kt_modal_1_2').modal('show');
+            $('#failres').text(res);
+        }
     </script>
 </asp:Content>
 <asp:Content ID="ContentAction" ContentPlaceHolderID="Actions" runat="server">
@@ -56,15 +56,25 @@
                                 <!--Begin::Edit Info -->
 
                                 <div class="col-lg-12 row pt-2">
+                                    <div class="col-lg-4 form-group pt-4">
+                                        <label class="control-label col-lg-12">Project Code <span class="required"></span></label>
+                                        <div class="col-lg-12">
+                                            <telerik:RadTextBox ID="txtCode" runat="server" RenderMode="Lightweight" CssClass="form-control" Width="100%" OnTextChanged="txtCode_TextChanged" AutoPostBack="true"></telerik:RadTextBox>
+                                            <asp:RequiredFieldValidator Filter="Contains" ID="RequiredFieldValidator1" runat="server" Display="Dynamic" ValidationGroup="form"
+                                                ControlToValidate="txtCode" ErrorMessage="Please Enter Project Code " ForeColor="Red"
+                                                SetFocusOnError="True"></asp:RequiredFieldValidator><br />
+                                            <asp:Label ID="lblCodeDupli" runat="server" Visible="false" ForeColor="Red"></asp:Label>
+                                        </div>
+                                    </div>
 
-                                    <div class="col-lg-4 form-group pt-2">
+                                    <div class="col-lg-4 form-group pt-4">
                                         <label class="control-label col-lg-12">Project Name <span class="required"></span></label>
                                         <div class="col-lg-12">
                                             <telerik:RadTextBox ID="txtName" runat="server" RenderMode="Lightweight" CssClass="form-control" Width="100%"></telerik:RadTextBox>
                                             <asp:RequiredFieldValidator Filter="Contains" ID="RequiredFieldValidator5" runat="server" Display="Dynamic" ValidationGroup="form"
                                                 ControlToValidate="txtName" ErrorMessage="Please Enter Project Name " ForeColor="Red"
                                                 SetFocusOnError="True"></asp:RequiredFieldValidator><br />
-                                            <asp:Label ID="lblCodeDupli" runat="server" Visible="false" ForeColor="Red"></asp:Label>
+
                                         </div>
                                     </div>
 
@@ -97,9 +107,20 @@
                                     </div>
 
                                     <div class="col-lg-4 form-group pt-4">
+                                        <label class="control-label col-lg-12">Customers</label>
+                                        <div class="col-lg-12">
+                                            <telerik:RadComboBox ID="ddlCustomer" Filter="Contains" runat="server" RenderMode="Lightweight" Width="100%" DefaultMessage="Please Select Customer" CheckBoxes="true">
+                                            </telerik:RadComboBox>
+                                            <br />
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 form-group pt-4" hidden="hidden">
                                         <label class="control-label col-lg-12">license Type </label>
                                         <div class="col-lg-12">
-                                            <telerik:RadTextBox ID="txttype" runat="server" RenderMode="Lightweight" CssClass="form-control" Width="100%"></telerik:RadTextBox>
+                                            <telerik:RadComboBox ID="ddlType" Filter="Contains" runat="server" RenderMode="Lightweight" Width="100%" DefaultMessage="Please Select License Type">
+                                            </telerik:RadComboBox>
                                             <br />
 
                                         </div>
@@ -165,7 +186,7 @@
     <!--begin::SuccessModal-->
     <div class="modal fade" id="kt_modal_1_4" tabindex="-1" role="dialog" style="height: auto" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content" style="width: 650px;">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Success</h5>
                 </div>
@@ -207,7 +228,7 @@
             </div>
         </div>
     </div>
-        <!--end::FailedModal-->
+    <!--end::FailedModal-->
     <div class="modal fade" id="kt_modal_1_2" tabindex="-1" role="dialog" style="height: auto" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
   
-                                    <div class="col-lg-4 form-group pt-4">
+                                    <div class="col-lg-4 form-group pt-2">
                                         <label class="control-label col-lg-12">Status <span class="required"></span></label>
                                         <div class="col-lg-12">
                                             <telerik:RadDropDownList ID="ddlStatus" Filter="Contains" runat="server" RenderMode="Lightweight" Width="100%" DefaultMessage="Please Select">
@@ -140,7 +140,7 @@
     <!--begin::SuccessModal-->
     <div class="modal fade" id="kt_modal_1_4" tabindex="-1" role="dialog" style="height: auto" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content" style="width: 650px;">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Success</h5>
                 </div>

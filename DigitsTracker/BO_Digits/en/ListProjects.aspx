@@ -68,7 +68,7 @@
                                             <telerik:GridButtonColumn CommandName="Edit" Text='<i class="fa fa-edit"></i>' HeaderStyle-Width="60px" EditFormColumnIndex="0" UniqueName="EditColumn">
                                             </telerik:GridButtonColumn>
 
-                                             <telerik:GridTemplateColumn HeaderStyle-Width="80px" AllowFiltering="false" HeaderText="Customers" HeaderStyle-Font-Size="Smaller" HeaderStyle-Font-Bold="true" UniqueName="Customers">
+                                             <telerik:GridTemplateColumn HeaderStyle-Width="80px" AllowFiltering="false" HeaderText="Customers" HeaderStyle-Font-Size="Smaller" Visible="false" HeaderStyle-Font-Bold="true" UniqueName="Customers">
                                                  <ItemTemplate>
                                                      <asp:ImageButton CommandName="Customers" ID="RadImageButton2" Visible="true" AlternateText="Customers" runat="server"
                                                          ImageUrl="../assets/media/svg/general/Customer.svg"></asp:ImageButton>

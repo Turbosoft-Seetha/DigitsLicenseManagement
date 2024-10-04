@@ -47,7 +47,6 @@ namespace DigitsLicenseManagement.BO_Digits.en
         }
 
         protected void Save()
-
         {
             string name, code;
 
@@ -59,15 +58,11 @@ namespace DigitsLicenseManagement.BO_Digits.en
             {
                 try
                 {
-                    ViewState["Value"] = "";
                     string[] arr = { code };
+                    DataTable dt = Obj.loadList("InsertLicenseTypes", "sp_Masters", name, arr);
+                    string res = dt.Rows[0]["transID"].ToString();
 
-                    string Value = Obj.SaveData("sp_Masters", "InsertLicenseTypes", name, arr);
-                    ViewState["Value"] = Value.ToString();
-
-                    int res = Int32.Parse(Value.ToString());
-                    Session["CusID"] = res;
-                    if (res > 0)
+                    if (res == "1")
                     {
                         ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('License Type Inserted Successfully');</script>", false);
                     }
@@ -91,9 +86,10 @@ namespace DigitsLicenseManagement.BO_Digits.en
                 {
                     string id = ResponseID.ToString();
                     string[] arr = { code, id };
-                    string Value = Obj.SaveData("sp_Masters", "UpdateLicenseTypes", name, arr);
-                    int res = Int32.Parse(Value.ToString());
-                    if (res > 0)
+                    DataTable dt = Obj.loadList("UpdateLicenseTypes", "sp_Masters", name, arr);
+                    string res = dt.Rows[0]["transID"].ToString();
+
+                    if (res == "1")
                     {
                         ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('License Type Updated Successfully');</script>", false);
                     }
