@@ -71,9 +71,6 @@
 
                             <telerik:RadAjaxPanel ID="RadAjaxPanel2" runat="server" LoadingPanelID="RadAjaxLoadingPanel1">
 
-                                <!--Begin::Basic Info -->
-
-                                <div class="col-lg-12 fw-bold fs-3">Basic Info    </div>
 
                                 <div class="col-lg-12 row pt-2">
 
