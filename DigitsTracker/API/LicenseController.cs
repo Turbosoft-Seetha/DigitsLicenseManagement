@@ -91,16 +91,35 @@ namespace DigitsTracker.API
                         });
                     }
 
+
+                    int RotBal = Int32.Parse(listItems[0].UserLimit.ToString()) - Int32.Parse(RouteCount.ToString());
+                    int InvBal = Int32.Parse(listItems[0].InvLimit.ToString()) - Int32.Parse(InventoryUserCount.ToString());
+                    int CCBal = Int32.Parse(listItems[0].CusConnectLimit.ToString()) - Int32.Parse(CustomerConnectUserCount.ToString());
+                    int BOBal = Int32.Parse(listItems[0].BOLimit.ToString()) - Int32.Parse(BackOfficeUserCount.ToString());
+
                     DateTime ExpiryDate = DateTime.Parse(listItems[0].ExpiryDate);
                     string Status = listItems[0].Status;
 
                     if (ExpiryDate < DateTime.Now) // Check if the expiry date is in the past
                     {
+                        int BufferDays = Int32.Parse(listItems[0].BufferPeriodInDays);
+
+                        if (ExpiryDate.AddDays(BufferDays) < DateTime.Now)
+                        {
+                            odDetail.AlertMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                        }
+                        else
+                        {
+                            odDetail.AlertMessage = "Your license has expired on " + ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
+                        }
+
                         odDetail.ResponseMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                       
                     }
                     else if (Status == "Cancelled")
                     {
                         odDetail.ResponseMessage = "Your license has Cancelled. Please contact the DigiTS team to activate your license.";
+                        odDetail.AlertMessage = "Your license has Cancelled. Please contact the DigiTS team to activate your license.";
                     }
                     else
                     {
@@ -187,6 +206,47 @@ namespace DigitsTracker.API
                         else
                         {
                             odDetail.ResponseMessage = "Proceed";
+
+                            if (RotBal <= 0 || InvBal <= 0 || CCBal <= 0 || BOBal <= 0)
+                            {
+                                if (listItems[0].NeedExpiryNotification == "Yes")
+                                {
+                                    int PriorExpNotiDay = Int32.Parse(listItems[0].Prior_Exp_Notfctn_Intrvl_InDays);
+
+                                    if (ExpiryDate.AddDays(-PriorExpNotiDay) <= DateTime.Now)
+                                    {
+                                        odDetail.AlertMessage = "Your licence will expire on " + ExpiryDate + ".You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the licence will be cancelled.You have exceeded the limit, and routes or users will become inactive after the buffer period.Please contact the DigiTS team to renew your licence.";
+                                    }
+                                    else
+                                    {
+                                        odDetail.AlertMessage = "You have exceeded the limit. Routes or users will become inactive after the buffer period.";
+                                    }
+                                }
+                                else
+                                {
+                                    odDetail.AlertMessage = "You have exceeded the limit. Routes or users will become inactive after the buffer period.";
+                                }
+                            }
+                            else
+                            {
+                                if (listItems[0].NeedExpiryNotification == "Yes")
+                                {
+                                    int PriorExpNotiDay = Int32.Parse(listItems[0].Prior_Exp_Notfctn_Intrvl_InDays);
+
+                                    if (ExpiryDate.AddDays(-PriorExpNotiDay) <= DateTime.Now)
+                                    {
+                                        odDetail.AlertMessage = "Your license will expire on " + ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
+                                    }
+                                    else
+                                    {
+                                        odDetail.AlertMessage = "Proceed";
+                                    }
+                                }
+                                else
+                                {
+                                    odDetail.AlertMessage = "Proceed";
+                                }
+                            }
                         }
                     }
 
@@ -228,6 +288,7 @@ namespace DigitsTracker.API
                     odDetail.Res = "500";
                     odDetail.Message = "Failure";
                     odDetail.ResponseMessage = "Something went wrong please try again later.";
+                    odDetail.AlertMessage = "Something went wrong please try again later.";
                     odDetail.LicenseData = listItems;
 
                     var result = new { result = new List<ResponseOut> { odDetail } };
@@ -252,6 +313,7 @@ namespace DigitsTracker.API
             public string Res { get; set; }
             public string Message { get; set; }
             public string ResponseMessage { get; set; }
+            public string AlertMessage { get; set; }
 
             public List<LicenseOut> LicenseData { get; set; }
         }
