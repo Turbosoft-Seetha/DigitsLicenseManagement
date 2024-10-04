@@ -106,14 +106,14 @@ namespace DigitsTracker.API
 
                         if (ExpiryDate.AddDays(BufferDays) < DateTime.Now)
                         {
-                            odDetail.AlertMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                            odDetail.AlertMessage = "Your license has expired on " + listItems[0].ExpiryDate + ". Please contact the DigiTS team to renew your license.";
                         }
                         else
                         {
-                            odDetail.AlertMessage = "Your license has expired on " + ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
+                            odDetail.AlertMessage = "Your license has expired on " + listItems[0].ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
                         }
 
-                        odDetail.ResponseMessage = "Your license has expired. Please contact the DigiTS team to renew your license.";
+                        odDetail.ResponseMessage = "Your license has expired on " + listItems[0].ExpiryDate + ". Please contact the DigiTS team to renew your license.";
                        
                     }
                     else if (Status == "Cancelled")
@@ -215,7 +215,7 @@ namespace DigitsTracker.API
 
                                     if (ExpiryDate.AddDays(-PriorExpNotiDay) <= DateTime.Now)
                                     {
-                                        odDetail.AlertMessage = "Your licence will expire on " + ExpiryDate + ".You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the licence will be cancelled.You have exceeded the limit, and routes or users will become inactive after the buffer period.Please contact the DigiTS team to renew your licence.";
+                                        odDetail.AlertMessage = "Your licence will expire on " + listItems[0].ExpiryDate + ".You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the licence will be cancelled.You have exceeded the limit, and routes or users will become inactive after the buffer period.Please contact the DigiTS team to renew your licence.";
                                     }
                                     else
                                     {
@@ -235,7 +235,7 @@ namespace DigitsTracker.API
 
                                     if (ExpiryDate.AddDays(-PriorExpNotiDay) <= DateTime.Now)
                                     {
-                                        odDetail.AlertMessage = "Your license will expire on " + ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
+                                        odDetail.AlertMessage = "Your license will expire on " + listItems[0].ExpiryDate + ". You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the license will be cancelled. Please contact the DigiTS team to renew your license.";
                                     }
                                     else
                                     {
