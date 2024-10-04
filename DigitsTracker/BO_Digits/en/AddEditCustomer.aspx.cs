@@ -55,7 +55,6 @@ namespace DigitsLicenseManagement.BO_Digits.en
         }
 
         protected void Save()
-
         {
             string name, code, contactnumber, contactperson, email, status;
 
@@ -71,17 +70,12 @@ namespace DigitsLicenseManagement.BO_Digits.en
             {
                 try
                 {
-                    ViewState["Value"] = "";
                     string[] arr = { code, contactnumber, contactperson, email, status ,user };
-
                     string Value = Obj.SaveData("sp_Masters", "InsertCustomer", name, arr);
-                    ViewState["Value"] = Value.ToString();
-
                     int res = Int32.Parse(Value.ToString());
-                    Session["CusID"] = res;
                     if (res > 0)
                     {
-                        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('Project Inserted Successfully');</script>", false);
+                        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('Customer Inserted Successfully');</script>", false);
                     }
                     else
                     {

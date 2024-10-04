@@ -81,7 +81,7 @@ namespace DigitsLicenseManagement.BO_Digits.en
                     Session["prjID"] = res;
                     if (res > 0)
                     {
-                        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('Customer Inserted Successfully');</script>", false);
+                        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "tmp", "<script type='text/javascript'>Succcess('Project Inserted Successfully');</script>", false);
                     }
                     else
                     {
