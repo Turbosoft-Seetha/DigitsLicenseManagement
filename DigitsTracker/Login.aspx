@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="DigitsLicenseManagement.Login" %>
+
 <html lang="en" data-theme="light">
 <head>
     <base href="../../../">
@@ -21,42 +22,58 @@
     <link href="BO_Digits/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="BO_Digits/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--end::Global Stylesheets Bundle-->
 </head>
 
-
     <script type="text/javascript">
         $(document).ready(function () {
-            // Toggle password visibility on hover
-            $('#show_password').hover(function () {
-                // Change the attribute to text
+            // Add a click event listener to the show_password element
+            $('#show_password').click(function () {
+                var PasswordTextbox = document.getElementById('<%= txtPassword.ClientID %>'); // Use the ASP.NET ClientID
+            var toggleIcon = document.getElementById("toggleIcon");
 
-                $('#txtPassword').attr('type', 'text');
-                $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
-            },
-                function () {
-                    // Change the attribute back to password
-                    $('#txtPassword').attr('type', 'password');
-                    $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
-                });
+            // Toggle password visibility
+            if (PasswordTextbox.type === "password") {
+                // Change input type to text to show password
+                PasswordTextbox.type = "text";
+
+                // Change icon to 'eye-slash'
+                toggleIcon.classList.remove("bi-eye");
+                toggleIcon.classList.add("bi-eye-slash");
+
+                // Auto-hide the password after 5 seconds
+                setTimeout(function () {
+                    PasswordTextbox.type = "password";
+                    toggleIcon.classList.remove("bi-eye-slash");
+                    toggleIcon.classList.add("bi-eye");
+                }, 5000); // Revert after 5 seconds
+
+            } else {
+                // Change input type back to password
+                PasswordTextbox.type = "password";
+                // Change icon to 'eye'
+                toggleIcon.classList.remove("bi-eye-slash");
+                toggleIcon.classList.add("bi-eye");
+            }
+            });
 
             // Checkbox to show/hide password
             $('#ShowPassword').click(function () {
                 $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
             });
-        });
-    </script>
+    });
+</script>
 
-    	<script type="text/javascript">
-            function button_click(objTextBox, objBtnID) {
-                if (window.event.keyCode == 13) {
-                    document.getElementById(objBtnID).focus();
-                    document.getElementById(objBtnID).click();
-                }
-            }
+<script type="text/javascript">
+    function button_click(objTextBox, objBtnID) {
+        if (window.event.keyCode == 13) {
+            document.getElementById(objBtnID).focus();
+            document.getElementById(objBtnID).click();
+        }
+    }
        </script>
 
 <body data-kt-name="metronic" id="kt_body" class="app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
@@ -77,13 +94,13 @@
                 background-image: url('BO_DIgits/assets/media/bg/bg4.jpg');
             }
 
-             .rounded-extra {
-        border-radius: 1.6rem; /* Adjust the value as needed for extra rounding */
-    }
+            .rounded-extra {
+                border-radius: 1.6rem; /* Adjust the value as needed for extra rounding */
+            }
 
-              .link-primary {
-        text-decoration: none;
-    }
+            .link-primary {
+                text-decoration: none;
+            }
         </style>
         <!--end::Page bg image-->
         <!--begin::Authentication - Sign-in -->
@@ -93,8 +110,8 @@
                 <!--begin::Aside-->
                 <div class="d-flex flex-column">
                     <!--begin::Logo-->
-                    <div  class="mb-7">
-                        <img alt="Logo" src="BO_DIgits/assets/media/bg/logo.svg" style="width:500px;">
+                    <div class="mb-7">
+                        <img alt="Logo" src="BO_DIgits/assets/media/bg/logo.svg" style="width: 500px;">
                     </div>
                     <!--end::Logo-->
                     <!--begin::Title-->
@@ -109,10 +126,10 @@
                 <!--begin::Card-->
                 <div class="card w-md-500px rounded-extra shadow">
 
-                    <form class="form w-100" runat="server" >
-                    <!--begin::Card body-->
-                    <div class="card-body p-10 p-lg-20">
-                        <!--begin::Form-->
+                    <form class="form w-100" runat="server">
+                        <!--begin::Card body-->
+                        <div class="card-body p-10 p-lg-20">
+                            <!--begin::Form-->
                             <!--begin::Heading-->
                             <div class="text-center mb-11">
                                 <!--begin::Title-->
@@ -124,37 +141,43 @@
                             </div>
                             <!--begin::Heading-->
                             <!--begin::Login options-->
-                           
+
                             <!--end::Login options-->
                             <!--begin::Separator-->
-                          
+
                             <!--end::Separator-->
                             <!--begin::Input group=-->
-                            <asp:Literal ID="ltrlError" runat="server" ></asp:Literal>
-                           <div class="fv-row mb-8">
-										<asp:TextBox ID="txtUsername" runat="server" autocomplete="off" placeholder="username"  class="form-control form-control-solid  "></asp:TextBox>								
-										<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="Enter username" Display="Dynamic" ForeColor="Red" ></asp:RequiredFieldValidator>
-									</div>
+                            <asp:Literal ID="ltrlError" runat="server"></asp:Literal>
+                            <div class="fv-row mb-8">
+                                <asp:TextBox ID="txtUsername" runat="server" autocomplete="off" placeholder="username" class="form-control form-control-solid  "></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="Enter username" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                            </div>
                             <!--end::Input group=-->
-                          <div class="input-group"> <%--class="fv-row mb-7"--%>
-										<asp:TextBox ID="txtPassword" runat="server" autocomplete="off" placeholder="Password" TextMode="Password" class="form-control form-control-solid" data-toogle="txtPassword" ></asp:TextBox>
-                              <div class="input-group-append ">
-                                        <button id="show_password" type="button" >
-                                            <span> <i class="fa fa-eye"></i></span>
-                                        </button>
-                                    </div>
+                            <div class="input-group">
+                                <%--class="fv-row mb-7"--%>
+                                <asp:TextBox ID="txtPassword" runat="server" autocomplete="off" placeholder="Password" TextMode="Password" class="form-control form-control-solid" data-toogle="txtPassword"></asp:TextBox>
+                               <div class="input-group-append">
+        <span id="show_password" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+            <i id="toggleIcon" class="bi bi-eye"></i>
+        </span>
+    </div>
+                                <%-- <div class="input-group-append ">
+                                    <span id="show_password" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
+                                        <i id="toggleIcon" class="bi bi-eye"></i>
+                                    </span>
+                                </div>--%>
 
-						</div>
-                        										<asp:RequiredFieldValidator ID="reqPass" runat="server" ControlToValidate="txtPassword" ErrorMessage="Enter Password" Display="Dynamic" ForeColor="Red" ></asp:RequiredFieldValidator>
+                            </div>
+                            <asp:RequiredFieldValidator ID="reqPass" runat="server" ControlToValidate="txtPassword" ErrorMessage="Enter Password" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
 
                             <!--end::Input group=-->
                             <!--begin::Wrapper-->
-                           <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
-                                 <div></div>
-                                    <!--begin::Link-->
-                                    <%--<a href="../../demo1/dist/authentication/layouts/creative/reset-password.html" class="link-primary" style="text-decoration: none;">Forgot Password ?</a>--%>
-                                    <!--end::Link-->
-                               <a href="ResetPassword.aspx" class="link-primary" data-kt-translate="sign-in-forgot-password">Forgot Password ?</a>
+                            <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+                                <div></div>
+                                <!--begin::Link-->
+                                <%--<a href="../../demo1/dist/authentication/layouts/creative/reset-password.html" class="link-primary" style="text-decoration: none;">Forgot Password ?</a>--%>
+                                <!--end::Link-->
+                                <a href="ResetPassword.aspx" class="link-primary" data-kt-translate="sign-in-forgot-password">Forgot Password ?</a>
                             </div>
                             <!--end::Wrapper-->
                             <!--begin::Submit button-->
@@ -173,46 +196,48 @@
                             </div>
                             <!--end::Submit button-->
                             <!--begin::Sign up-->
-                           <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-10 m justify-content-center">
-										<div>	
-											<asp:CheckBox ID="chkRemember" runat="server"  CssClass="sign-in-custom-checkbox" /> Remember me
-										</div>
-                            <!--end::Sign up-->
-                           
-                        </div>
+                            <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-10 m justify-content-center">
+                                <div>
+                                    <asp:CheckBox ID="chkRemember" runat="server" CssClass="sign-in-custom-checkbox" />
+                                    Remember me
+                                </div>
+                                <!--end::Sign up-->
 
-                          <div class=" text-gray-500  fs-6 text-center ">
-                                
-                              By signing into DigiTS License Management, you accept the <br><a href="#" class="link-primary">Terms and Conditions</a> and
+                            </div>
+
+                            <div class=" text-gray-500  fs-6 text-center ">
+                                By signing into DigiTS License Management, you accept the
+                                <br>
+                                <a href="#" class="link-primary">Terms and Conditions</a> and
                                <a href="License.aspx" class="link-primary">Privacy Policy</a>
                             </div>
 
-                        
+
                         </div>
-                        </form>
-                    
-                        
-                        <!--end::Form-->
-                    </div>
-                
-                    <!--end::Card body-->
+                    </form>
+
+
+                    <!--end::Form-->
                 </div>
-            
-                <!--end::Card-->
+
+                <!--end::Card body-->
             </div>
-        
-        
-            <!--end::Body-->
+
+            <!--end::Card-->
         </div>
-    
-        <!--end::Authentication - Sign-in-->
-   
+
+
+        <!--end::Body-->
+    </div>
+
+    <!--end::Authentication - Sign-in-->
+
     <!--end::Root-->
     <!--begin::Javascript-->
 
-     <script type="text/javascript">
-         document.getElementById('<%= txtPassword.ClientID %>').setAttribute(
-        "onkeypress", "button_click(this, '" + '<%= lnkSignIn.ClientID %>' + "')");
+    <script type="text/javascript">
+        document.getElementById('<%= txtPassword.ClientID %>').setAttribute(
+            "onkeypress", "button_click(this, '" + '<%= lnkSignIn.ClientID %>' + "')");
     </script>
 
 
@@ -227,9 +252,11 @@
     <!--end::Javascript-->
 
 
-    <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg>
-</body><!--end::Body-->
+    <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
+        <defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg>
+</body>
+<!--end::Body-->
 
 
-    </html>
+</html>
 
