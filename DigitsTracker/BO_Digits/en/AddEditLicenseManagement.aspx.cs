@@ -4,6 +4,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 using System.Xml;
 using Telerik.Web.UI;
 using Telerik.Web.UI.Skins;
@@ -305,7 +306,12 @@ namespace DigitsLicenseManagement.BO_Digits.en
                     {
 
                         string Platform = dr["PlmID"].Text.ToString();
-                        string NoOfUsers = dr["NoOfUsers"].Text.ToString();
+                        // string NoOfUsers = dr["NoOfUsers"].Text.ToString();
+
+                        // Find the TextBox control for NoOfUsers
+                        TextBox txtNoOfUsers = (TextBox)dr.FindControl("txtNoOfUsers");
+                        string NoOfUsers = txtNoOfUsers != null ? txtNoOfUsers.Text : dr["NoOfUsers"].Text.ToString();
+
                         createNode4(Platform, NoOfUsers, writer);
                         c++;
                     }
@@ -475,5 +481,6 @@ namespace DigitsLicenseManagement.BO_Digits.en
         {
             Response.Redirect("LicenseManagement.aspx");
         }
+
     }
 }

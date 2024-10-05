@@ -50,7 +50,7 @@
                     <telerik:AjaxUpdatedControl ControlID="RadGrid2" />
                     <%--<telerik:AjaxUpdatedControl ControlID="ddlPlatform" />--%>
                 </UpdatedControls>
-            </telerik:AjaxSetting> 
+            </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="RadGrid2">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="ddlPlatform" />
@@ -86,14 +86,14 @@
             </div>
 
             <div class="col-lg-4 pt-2">
-                 <label class="control-label col-lg-10 pt-2 pb-2" style="color: #464646;">Licence Type</label>
-                 <div class="col-lg-12">
-                     <telerik:RadComboBox RenderMode="Lightweight" Filter="Contains" ID="ddlType" DateInput-DateFormat="dd-MMM-yyyy" runat="server" Width="100%" Skin="Silk" EmptyMessage="Select License Type">
-                     </telerik:RadComboBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" Display="Dynamic" ErrorMessage="Select License Type"
-                         ForeColor="Red" ControlToValidate="ddlType" ValidationGroup="frm"></asp:RequiredFieldValidator>
-                 </div>
-             </div>
+                <label class="control-label col-lg-10 pt-2 pb-2" style="color: #464646;">Licence Type</label>
+                <div class="col-lg-12">
+                    <telerik:RadComboBox RenderMode="Lightweight" Filter="Contains" ID="ddlType" DateInput-DateFormat="dd-MMM-yyyy" runat="server" Width="100%" Skin="Silk" EmptyMessage="Select License Type">
+                    </telerik:RadComboBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" Display="Dynamic" ErrorMessage="Select License Type"
+                        ForeColor="Red" ControlToValidate="ddlType" ValidationGroup="frm"></asp:RequiredFieldValidator>
+                </div>
+            </div>
 
             <div class="col-lg-4 pt-2">
                 <label class="control-label col-lg-10 pt-2 pb-2" style="color: #464646;">Start Date</label>
@@ -157,8 +157,8 @@
                 <div class="col-lg-12">
                     <telerik:RadComboBox RenderMode="Lightweight" Filter="Contains" ID="ddlStatus" runat="server" Width="100%" Skin="Silk">
                         <Items>
-                            <telerik:RadComboBoxItem Value="Y" Text="Active" Selected="true"/>
-                            <telerik:RadComboBoxItem Value="CN" Text="Cancel" />                           
+                            <telerik:RadComboBoxItem Value="Y" Text="Active" Selected="true" />
+                            <telerik:RadComboBoxItem Value="CN" Text="Cancel" />
                         </Items>
                     </telerik:RadComboBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" Display="Dynamic" ErrorMessage="Status is mandatory"
@@ -241,19 +241,28 @@
                                 HeaderStyle-Font-Bold="true" UniqueName="PlmID" Display="false">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Platform" AllowFiltering="true" HeaderStyle-Width="150px"
+                            <telerik:GridBoundColumn DataField="Platform" AllowFiltering="false" HeaderStyle-Width="100px"
                                 HeaderStyle-Font-Size="Smaller" HeaderText="Platform" FilterControlWidth="100%"
                                 CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
                                 HeaderStyle-Font-Bold="true" UniqueName="Platform">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="NoOfUsers" AllowFiltering="true" HeaderStyle-Width="150px"
+                            <%--<telerik:GridBoundColumn DataField="NoOfUsers" AllowFiltering="true" HeaderStyle-Width="150px"
                                 HeaderStyle-Font-Size="Smaller" HeaderText="No Of Users" FilterControlWidth="100%"
                                 CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
                                 HeaderStyle-Font-Bold="true" UniqueName="NoOfUsers">
-                            </telerik:GridBoundColumn>
+                            </telerik:GridBoundColumn>--%>
 
-                            <telerik:GridTemplateColumn HeaderStyle-Width="70px" AllowFiltering="false" HeaderText="Delete" HeaderStyle-Font-Size="Smaller" HeaderStyle-Font-Bold="true" UniqueName="Delete">
+                            <telerik:GridTemplateColumn HeaderText="No Of Users" UniqueName="NoOfUsersColumn" AllowFiltering="false" FilterControlWidth="100%"
+                                CurrentFilterFunction="Contains" AutoPostBackOnFilter="true" ShowFilterIcon="false"
+                                HeaderStyle-Width="150px" HeaderStyle-Font-Size="Smaller" HeaderStyle-Font-Bold="true">
+                                <ItemTemplate>
+                                    <asp:TextBox ID="txtNoOfUsers" runat="server" Text='<%# Eval("NoOfUsers") %>' Width="20%" BorderColor="#c4c4c4" BorderWidth="1px"></asp:TextBox>
+                                </ItemTemplate>
+                            </telerik:GridTemplateColumn>
+
+
+                            <telerik:GridTemplateColumn HeaderStyle-Width="70px" Visible="false" AllowFiltering="false" HeaderText="Delete" HeaderStyle-Font-Size="Smaller" HeaderStyle-Font-Bold="true" UniqueName="Delete">
                                 <ItemTemplate>
                                     <asp:ImageButton CommandName="Delete" ID="Delete" Visible="true" AlternateText="Delete" runat="server"
                                         ImageUrl="../assets/media/svg/general/Trash.svg"></asp:ImageButton>
