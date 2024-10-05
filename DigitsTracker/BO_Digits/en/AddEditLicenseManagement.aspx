@@ -219,7 +219,7 @@
         <telerik:RadAjaxPanel ID="RadAjaxPanel1" runat="server" LoadingPanelID="RadAjaxLoadingPanel3">
 
             <div class="col-lg-12 mt-8 d-flex" style="padding-bottom: 10px">
-                <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="true"
+                <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="false"
                     ID="RadGrid2" GridLines="None"
                     ShowFooter="True" AllowSorting="True"
                     OnNeedDataSource="RadGrid2_NeedDataSource"

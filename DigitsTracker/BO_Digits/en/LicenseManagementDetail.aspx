@@ -48,12 +48,12 @@
                                         <label class="col-lg-4 col-form-label" style="display: contents;">
                                             <asp:Label ID="lblContactPerson" Font-Bold="true" runat="server"></asp:Label></label>
                                     </div>
-                                     <div class="col-lg-12 mb-2">
-                                         <label class="col-lg-2 col-form-label" style="display: contents;">API Last Upadated Time:</label>
-                                         <label class="col-lg-4 col-form-label" style="display: contents;">
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="col-lg-2 col-form-label" style="display: contents;">API Last Upadated Time:</label>
+                                        <label class="col-lg-4 col-form-label" style="display: contents;">
                                             <asp:Label ID="lblAPILastAPIUpadted" Font-Bold="true" runat="server"></asp:Label></label>
-                                     </div>
-                                   
+                                    </div>
+
                                 </td>
                                 <td style="width: 30%">
                                     <div class="col-lg-12 mb-2">
@@ -84,11 +84,11 @@
                                         <label class="col-lg-4 col-form-label" style="display: contents;">
                                             <asp:Label ID="lblContactNumber" Font-Bold="true" runat="server"></asp:Label></label>
                                     </div>
-                                     <div class="col-lg-12 mb-2">
-     <label class="col-lg-2 col-form-label" style="display: contents;">Status:</label>
-     <label class="col-lg-4 col-form-label" style="display: contents;">
-         <asp:Label ID="lblStatus" Font-Bold="true" runat="server"></asp:Label></label>
- </div>
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="col-lg-2 col-form-label" style="display: contents;">Status:</label>
+                                        <label class="col-lg-4 col-form-label" style="display: contents;">
+                                            <asp:Label ID="lblStatus" Font-Bold="true" runat="server"></asp:Label></label>
+                                    </div>
                                 </td>
                                 <td style="width: 30%">
                                     <div class="col-lg-12 mb-2">
@@ -135,7 +135,7 @@
 
         <div class="col-lg-12 row">
             <div class="col-lg-12">
-                <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="true"
+                <telerik:RadGrid RenderMode="Lightweight" runat="server" EnableLinqExpressions="false" AllowMultiRowSelection="false"
                     ID="grvRpt" GridLines="None"
                     ShowFooter="True" AllowSorting="True"
                     OnNeedDataSource="grvRpt_NeedDataSource"
@@ -193,33 +193,7 @@
                     </ClientSettings>
                 </telerik:RadGrid>
             </div>
-            <%--<div class="col-lg-4" style="border-style: groove;    border-width: 2px;">
-               <div class="col-lg-12 p-4">
-                    <div class="col-lg-12 row p-2 mb-2 fw-bold fs-3">
-                        <span> <u> License Consumed User Counts </u></span>
-                    </div>
-                   <div class="col-lg-12 row p-2 mb-2">
-                   <span class="col-lg-8 fs-4 fw-bold"> Route : </span>
-                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblRouteCount" Text="0"> </asp:Label>
-                   </div>
-
-                    <div class="col-lg-12 row p-2 mb-2">
-                   <span class="col-lg-8 fs-4 fw-bold"> Inventory User : </span>
-                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblInvUserCount" Text="0"> </asp:Label>
-                   </div>
-
-                   <div class="col-lg-12 row p-2 mb-2">
-                   <span class="col-lg-8 fs-4 fw-bold"> Backend User : </span>
-                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblBOUserCount" Text="0"> </asp:Label>
-                   </div>
-
-                   <div class="col-lg-12 row p-2 mb-2">
-                   <span class="col-lg-8 fs-4 fw-bold"> Customer Connect User : </span>
-                   <asp:Label class="col-lg-4 fs-3" runat="server" ID="lblCCUserCount" Text="0"> </asp:Label>
-                   </div>
-
-               </div>
-            </div>--%>
+           
         </div>
 
 
