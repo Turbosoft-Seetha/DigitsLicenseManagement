@@ -207,7 +207,7 @@ namespace DigitsTracker.API
                         {
                             odDetail.ResponseMessage = "Proceed";
 
-                            if (RotBal <= 0 || InvBal <= 0 || CCBal <= 0 || BOBal <= 0)
+                            if (RotBal < 0 || InvBal < 0 || CCBal < 0 || BOBal < 0)
                             {
                                 if (listItems[0].NeedExpiryNotification == "Yes")
                                 {
@@ -215,16 +215,16 @@ namespace DigitsTracker.API
 
                                     if (ExpiryDate.AddDays(-PriorExpNotiDay) <= DateTime.Now)
                                     {
-                                        odDetail.AlertMessage = "Your licence will expire on " + listItems[0].ExpiryDate + ".You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the licence will be cancelled.You have exceeded the limit, and routes or users will become inactive after the buffer period.Please contact the DigiTS team to renew your licence.";
+                                        odDetail.AlertMessage = "Your licence will expire on " + listItems[0].ExpiryDate + ".You have a buffer period of " + listItems[0].BufferPeriodInDays + " days, after which the licence will be cancelled.You have exceeded the limit, If no action is taken within the next 15 days, you may experience disruptions in accessing the application..Please contact the DigiTS team to renew your licence.";
                                     }
                                     else
                                     {
-                                        odDetail.AlertMessage = "You have exceeded the limit. Routes or users will become inactive after the buffer period.";
+                                        odDetail.AlertMessage = "According to the DigiTS licensing policy, you have exceeded the limit. If no action is taken within the next 15 days, you may experience disruptions in accessing the application.";
                                     }
                                 }
                                 else
                                 {
-                                    odDetail.AlertMessage = "You have exceeded the limit. Routes or users will become inactive after the buffer period.";
+                                    odDetail.AlertMessage = "According to the DigiTS licensing policy, you have exceeded the limit. If no action is taken within the next 15 days, you may experience disruptions in accessing the application.";
                                 }
                             }
                             else
@@ -239,12 +239,12 @@ namespace DigitsTracker.API
                                     }
                                     else
                                     {
-                                        odDetail.AlertMessage = "Proceed";
+                                        odDetail.AlertMessage = "";
                                     }
                                 }
                                 else
                                 {
-                                    odDetail.AlertMessage = "Proceed";
+                                    odDetail.AlertMessage = "";
                                 }
                             }
                         }
